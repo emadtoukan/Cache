@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        self.setupParse(launchOptions)
+        self.setupNotifications(application, launchOptions: launchOptions)
+        
         return true
     }
 
@@ -41,6 +46,117 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+    // MARK: - Setup Methods
+    func setupParse(launchOptions: [NSObject: AnyObject]?) {
+        // Parse
+        Parse.setApplicationId("9vV0SYRCEkFFBieeX9rFKVo6wHBUd6wkQatkZ6Fp",
+            clientKey: "3uLGDZnrzDxIm8VkF72MMYB8euol0FMwWjUgvyoU")
+        
+        // [Optional] Track statistics around application opens.
+        PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
+    }
+    
+    
+    // MARK: - Registering for notifications
+    func setupNotifications(application: UIApplication, launchOptions: [NSObject: AnyObject]?) {
+        // Soccer Actions and Category
+        let soccerInAction = UIMutableUserNotificationAction()
+        soccerInAction.identifier = "SOCCER_IN_ACTION_IDENTIFIER"
+        soccerInAction.title = "👍"
+        soccerInAction.activationMode = UIUserNotificationActivationMode.Background
+        soccerInAction.destructive = false
+        soccerInAction.authenticationRequired = false
+        
+        let soccerOutAction = UIMutableUserNotificationAction()
+        soccerOutAction.identifier = "SOCCER_OUT_ACTION_IDENTIFIER"
+        soccerOutAction.title = "👎"
+        soccerOutAction.activationMode = UIUserNotificationActivationMode.Background
+        soccerOutAction.destructive = true
+        soccerOutAction.authenticationRequired = false
+        
+        let soccerMaybeAction = UIMutableUserNotificationAction()
+        soccerMaybeAction.identifier = "SOCCER_MAYBE_ACTION_IDENTIFIER"
+        soccerMaybeAction.title = "✊"
+        soccerMaybeAction.activationMode = UIUserNotificationActivationMode.Background
+        soccerMaybeAction.destructive = false
+        soccerMaybeAction.authenticationRequired = false
+        
+        let soccerCategory = UIMutableUserNotificationCategory()
+        soccerCategory.identifier = "SOCCER_NOTIFICATION_IDENTIFIER"
+        soccerCategory.setActions([soccerInAction, soccerMaybeAction,soccerOutAction], forContext: UIUserNotificationActionContext.Default)
+        soccerCategory.setActions([soccerInAction, soccerOutAction], forContext: UIUserNotificationActionContext.Minimal)
+        
+        // This will register the app for receiving notifications and will prompt the user to accept the notifications
+        // We pass the list of categories to the settings
+        let notificationSettings = UIUserNotificationSettings(forTypes: [.Alert, .Badge, .Sound], categories: [soccerCategory])
+        application.registerUserNotificationSettings(notificationSettings)
+        
+        // Register the app for remote notifications
+        application.registerForRemoteNotifications()
+        
+        // NOTE: If the user swipes or taps on the notification, and the application was in the background, we can get the local or remote notification in here
+        if let notification = launchOptions?[UIApplicationLaunchOptionsRemoteNotificationKey] {
+            // TODO: Notification can be handled here, when the user launched the app with the notification
+        }
 
+        func application(application: UIApplication, didRegisterUserNotificationSettings notificationSettings: UIUserNotificationSettings) {
+            
+            // We get back the types of notifications that have been approved
+            print(notificationSettings.types)
+            
+            // We can also get access to the notification types that are approved by
+            let currentSettings = UIApplication.sharedApplication().currentUserNotificationSettings()?.types
+            print(currentSettings)
+            // TODO: What should we do if the user disabled the notifications?
+        }
+    }
+    
+    // REMOTE
+    func application(application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: NSData) {
+        print("didRegisterForRemoteNotificationsWithDeviceToken: \(deviceToken)")
+        
+        // Changing the device token to string
+        let tokenString = deviceToken.description.stringByReplacingOccurrencesOfString("[ <>]", withString: "", options: .RegularExpressionSearch, range: nil)
+        print("Token string format: \(tokenString)")
+        
+        let installation = PFInstallation.currentInstallation()
+        installation.setDeviceTokenFromData(deviceToken)
+        installation.saveInBackground()
+    }
+    
+    func application(application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: NSError) {
+        // Error happened while registering the the device for remove notification
+        // TODO: Need to handle this case if the user is unable to receive notifications
+        // We can check if the device had a token previously, if it didn't have, then we can display an error somewhere that the device current cannot receive notifications.
+        print("didFailToRegisterForRemoteNotificationsWithError: \(error)")
+    }
+    
+    func application(application: UIApplication, didReceiveRemoteNotification userInfo: [NSObject : AnyObject]) {
+        // NOTE: We will receive the notification here if the application was in the background or the foreground
+        // TODO: Check if the notification is received while the user has the application open, would the app display the notification or this has to be displayed manually
+        print("didReceiveRemoteNotification: \(userInfo)")
+    }
+    
+    func application(application: UIApplication, handleActionWithIdentifier identifier: String?, forRemoteNotification userInfo: [NSObject : AnyObject], withResponseInfo responseInfo: [NSObject : AnyObject], completionHandler: () -> Void) {
+        // NOTE: We can get the action from the notification in here
+        // If we implement this delegate method, the other delegate method without the responseInfo will not be called
+        
+        if let uIdentifier = identifier {
+            switch uIdentifier{
+            case "REPLY_ACTION_IDENTIFIER":
+                let text = responseInfo[UIUserNotificationActionResponseTypedTextKey]
+                print("REPLY_ACTION_IDENTIFIER with text: \(text)")
+            case "CANCEL_ACTION_IDENTIFIER":
+                print("CANCEL_ACTION_IDENTIFIER")
+            case "SOCCER_IN_ACTION_IDENTIFIER":
+                print("SOCCER_IN_ACTION_IDENTIFIER")
+            case "SOCCER_OUT_ACTION_IDENTIFIER":
+                print("SOCCER_OUT_ACTION_IDENTIFIER")
+            default:
+                print("Some action was pressed")
+            }
+        }
+        completionHandler()
+    }
 }
 
