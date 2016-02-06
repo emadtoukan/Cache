@@ -3,3 +3,6 @@
 //
 
 #import "Parse/Parse.h"
+#import "UIImageEffects.h"
+
+#import "SVProgressHUD/SVProgressHUD.h"

@@ -44,6 +44,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SVProgressHUD.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>UICountingLabel.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -52,47 +57,52 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>103AD987BC6F693ED8B88D55D6F5C783</key>
+		<key>016D982990393D4CF14C8AE7998AEC65</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>398F667F9EA20A36CC3E04EB58BC6B93</key>
+		<key>21D259DEA1F09FC9C6B129A273FF3589</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4B6E547893E28D6FB5590BD52DC7664C</key>
+		<key>432ECC54282C84882B482CCB4CF227FC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7D3B40C81EACD9DA60CDC867002C6F1A</key>
+		<key>579E629063D1C801A7925026305FA483</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>84D9273CD17B01C7D00C5580802686E0</key>
+		<key>6C18C789438292FED01EB702705FC9AA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A8840B467429EF80376CBFC2F02F87DE</key>
+		<key>80D377CF4D383EF05E8613B1E6AE375D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D0064BD889E0B6BE7BBFD7252B4E121A</key>
+		<key>8F3C1F6C9935A8232A48701A92E946BB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D188724A83B04D2375E5B2632FDD60CF</key>
+		<key>B0214E86E9E229E292863BC821997C4D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FDED929C33FFA7677C096901AA4ED3AF</key>
+		<key>BCA053B6430690326435042FEB61B458</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EA11821CEBA98B05D3E6ACB19EF85995</key>
 		<dict>
 			<key>primary</key>
 			<true/>

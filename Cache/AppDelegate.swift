@@ -8,6 +8,7 @@
 
 import UIKit
 import Parse
+import SVProgressHUD
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -20,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         self.setupParse(launchOptions)
         self.setupNotifications(application, launchOptions: launchOptions)
-        
+        self.setupSVProgress()
         return true
     }
 
@@ -157,6 +158,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
         completionHandler()
+    }
+    
+    // MARK: - Setup Progress
+    func setupSVProgress() {
+        SVProgressHUD.setForegroundColor(UIColor(red: 51/255, green: 51/255, blue: 51/255, alpha: 1))
+        SVProgressHUD.setRingThickness(2.5)
+        SVProgressHUD.setFont(UIFont(name: "ClanOT-Medium", size: 16))
+//        SVProgressHUD.setSuccessImage(UIImage(named: "CheckmarkGrey"))
+//        SVProgressHUD.setErrorImage(UIImage(named: "CrossGrey"))
+        SVProgressHUD.setDefaultMaskType(SVProgressHUDMaskType.Black)
     }
 }
 
