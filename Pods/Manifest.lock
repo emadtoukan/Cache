@@ -1,0 +1,22 @@
+PODS:
+  - Alamofire (3.1.5)
+  - Bolts/Tasks (1.6.0)
+  - Parse (1.12.0):
+    - Bolts/Tasks (~> 1.5)
+  - PNChart (0.8.8):
+    - UICountingLabel (~> 1.2.0)
+  - UICountingLabel (1.2.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 3.0)
+  - Parse
+  - PNChart
+
+SPEC CHECKSUMS:
+  Alamofire: 5f730ba29fd113b7ddd71c1e65d0c630acf5d7b0
+  Bolts: f52a250053bb517ca874523c3913776359ab3def
+  Parse: de2c52a9a1421b91ae7594ab8ce191afd184f19b
+  PNChart: 25f91e9c4688af49c3647489760624d037f5383f
+  UICountingLabel: 1db4e7d023e1762171eb226d6dff47a7a84f27aa
+
+COCOAPODS: 0.38.2
