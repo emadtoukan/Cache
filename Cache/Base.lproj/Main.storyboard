@@ -16,9 +16,9 @@
             <string>ClanOT-Black</string>
             <string>ClanOT-Black</string>
             <string>ClanOT-Black</string>
-            <string>ClanOT-Black</string>
         </mutableArray>
         <mutableArray key="ClanOT-Bold.otf">
+            <string>ClanOT-Bold</string>
             <string>ClanOT-Bold</string>
         </mutableArray>
         <mutableArray key="ClanOT-Book.otf">
@@ -283,20 +283,46 @@
                                 <rect key="frame" x="0.0" y="44" width="600" height="556"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Kf-v4-dEZ">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="75"/>
-                                        <color key="backgroundColor" red="0.48627450979999998" green="0.74901960779999999" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YOUR SAVINGS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="761-fg-0yD">
+                                                <rect key="frame" x="237" y="31" width="126" height="22"/>
+                                                <fontDescription key="fontDescription" name="ClanOT-Bold" family="ClanOT" pointSize="17"/>
+                                                <color key="textColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="75" id="KyB-4d-nno"/>
+                                            <constraint firstItem="761-fg-0yD" firstAttribute="centerY" secondItem="8Kf-v4-dEZ" secondAttribute="centerY" constant="10" id="BoV-0p-5su"/>
+                                            <constraint firstAttribute="height" constant="64" id="KyB-4d-nno"/>
+                                            <constraint firstItem="761-fg-0yD" firstAttribute="centerX" secondItem="8Kf-v4-dEZ" secondAttribute="centerX" id="R6J-4M-6R3"/>
                                         </constraints>
                                     </view>
-                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="86P-cT-WAz">
-                                        <rect key="frame" x="0.0" y="75" width="600" height="50"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b1O-ky-P8g">
+                                        <rect key="frame" x="0.0" y="64" width="600" height="100"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Vy-tH-WlJ">
-                                                <rect key="frame" x="0.0" y="0.0" width="1046" height="50"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RJJ-Il-7cB">
+                                                <rect key="frame" x="0.0" y="0.0" width="600" height="100"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="Lkr-1g-34y"/>
+                                            <constraint firstItem="RJJ-Il-7cB" firstAttribute="leading" secondItem="b1O-ky-P8g" secondAttribute="leading" id="RVK-bI-JIL"/>
+                                            <constraint firstItem="RJJ-Il-7cB" firstAttribute="bottom" secondItem="b1O-ky-P8g" secondAttribute="bottom" id="oEw-oP-0v7"/>
+                                            <constraint firstItem="RJJ-Il-7cB" firstAttribute="top" secondItem="b1O-ky-P8g" secondAttribute="top" id="zkN-Js-kcK"/>
+                                            <constraint firstItem="RJJ-Il-7cB" firstAttribute="trailing" secondItem="b1O-ky-P8g" secondAttribute="trailing" id="zwF-bm-3H5"/>
+                                        </constraints>
+                                    </view>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="86P-cT-WAz">
+                                        <rect key="frame" x="0.0" y="164" width="600" height="50"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Vy-tH-WlJ">
+                                                <rect key="frame" x="0.0" y="0.0" width="571" height="50"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="upu-4T-g4d">
-                                                        <rect key="frame" x="8" y="0.0" width="678" height="50"/>
+                                                        <rect key="frame" x="8" y="0.0" width="555" height="50"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vvq-Sr-9Ly">
                                                                 <rect key="frame" x="0.0" y="0.0" width="84" height="50"/>
@@ -304,48 +330,59 @@
                                                                 <state key="normal" title="GROCERIES">
                                                                     <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 </state>
+                                                                <connections>
+                                                                    <action selector="categoryButtonPressed:" destination="CGY-Za-Eru" eventType="touchUpInside" id="On2-wg-dFJ"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2BP-AL-Ixg">
-                                                                <rect key="frame" x="99" y="0.0" width="84" height="50"/>
+                                                                <rect key="frame" x="99" y="0.0" width="97" height="50"/>
                                                                 <fontDescription key="fontDescription" name="ClanOT-Black" family="ClanOT" pointSize="15"/>
-                                                                <state key="normal" title="GROCERIES">
+                                                                <state key="normal" title="HOUSEWARE">
                                                                     <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 </state>
+                                                                <connections>
+                                                                    <action selector="categoryButtonPressed:" destination="CGY-Za-Eru" eventType="touchUpInside" id="GDb-bS-dny"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4g3-Sa-Ta5">
-                                                                <rect key="frame" x="198" y="0.0" width="84" height="50"/>
+                                                                <rect key="frame" x="211" y="0.0" width="148" height="50"/>
                                                                 <fontDescription key="fontDescription" name="ClanOT-Black" family="ClanOT" pointSize="15"/>
-                                                                <state key="normal" title="GROCERIES">
+                                                                <state key="normal" title="PHARMACEUTICALS">
                                                                     <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 </state>
+                                                                <connections>
+                                                                    <action selector="categoryButtonPressed:" destination="CGY-Za-Eru" eventType="touchUpInside" id="cWs-rs-Byl"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L33-0P-D9r">
-                                                                <rect key="frame" x="297" y="0.0" width="84" height="50"/>
+                                                                <rect key="frame" x="374" y="0.0" width="38" height="50"/>
                                                                 <fontDescription key="fontDescription" name="ClanOT-Black" family="ClanOT" pointSize="15"/>
-                                                                <state key="normal" title="GROCERIES">
+                                                                <state key="normal" title="FUEL">
                                                                     <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 </state>
+                                                                <connections>
+                                                                    <action selector="categoryButtonPressed:" destination="CGY-Za-Eru" eventType="touchUpInside" id="UNF-ms-Vb8"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yyg-0x-crA">
-                                                                <rect key="frame" x="396" y="0.0" width="84" height="50"/>
+                                                                <rect key="frame" x="427" y="0.0" width="42" height="50"/>
                                                                 <fontDescription key="fontDescription" name="ClanOT-Black" family="ClanOT" pointSize="15"/>
-                                                                <state key="normal" title="GROCERIES">
+                                                                <state key="normal" title="BILLS">
                                                                     <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 </state>
+                                                                <connections>
+                                                                    <action selector="categoryButtonPressed:" destination="CGY-Za-Eru" eventType="touchUpInside" id="TUU-cg-sov"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m6M-XJ-XE9">
-                                                                <rect key="frame" x="495" y="0.0" width="84" height="50"/>
+                                                                <rect key="frame" x="484" y="0.0" width="71" height="50"/>
                                                                 <fontDescription key="fontDescription" name="ClanOT-Black" family="ClanOT" pointSize="15"/>
-                                                                <state key="normal" title="GROCERIES">
+                                                                <state key="normal" title="UTILITIES">
                                                                     <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 </state>
-                                                            </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="InO-QN-jtT">
-                                                                <rect key="frame" x="594" y="0.0" width="84" height="50"/>
-                                                                <fontDescription key="fontDescription" name="ClanOT-Black" family="ClanOT" pointSize="15"/>
-                                                                <state key="normal" title="GROCERIES">
-                                                                    <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                </state>
+                                                                <connections>
+                                                                    <action selector="categoryButtonPressed:" destination="CGY-Za-Eru" eventType="touchUpInside" id="hnt-gC-rGf"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <constraints>
@@ -372,7 +409,7 @@
                                         </constraints>
                                     </scrollView>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="G2m-jO-fIK">
-                                        <rect key="frame" x="0.0" y="125" width="600" height="431"/>
+                                        <rect key="frame" x="0.0" y="214" width="600" height="342"/>
                                         <color key="backgroundColor" red="0.92549019607843142" green="0.92549019607843142" blue="0.92549019607843142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="StoreCell" rowHeight="279" id="9bI-zh-mve" customClass="StoreTableViewCell" customModule="Cache" customModuleProvider="target">
@@ -477,7 +514,7 @@
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h6d-I1-66y">
                                                                                         <rect key="frame" x="90" y="9" width="35" height="17"/>
                                                                                         <fontDescription key="fontDescription" name="ClanOT-Book" family="ClanOT" pointSize="13"/>
-                                                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                                                                         <nil key="highlightedColor"/>
                                                                                     </label>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="$2" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yeS-Cj-1n7">
@@ -601,6 +638,13 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="buttonBills" destination="yyg-0x-crA" id="21X-fM-uPc"/>
+                        <outlet property="buttonFuel" destination="L33-0P-D9r" id="Jik-Fy-OwB"/>
+                        <outlet property="buttonGroceries" destination="Vvq-Sr-9Ly" id="YUF-iG-kOl"/>
+                        <outlet property="buttonHouseWare" destination="2BP-AL-Ixg" id="4E3-VB-JD9"/>
+                        <outlet property="buttonPharmaceutical" destination="4g3-Sa-Ta5" id="yih-pk-0WA"/>
+                        <outlet property="buttonUtilities" destination="m6M-XJ-XE9" id="TLd-UN-5ab"/>
+                        <outlet property="imageViewBlurred" destination="RJJ-Il-7cB" id="MlT-C2-cWb"/>
                         <outlet property="tableView" destination="G2m-jO-fIK" id="5vO-jO-tw8"/>
                     </connections>
                 </viewController>

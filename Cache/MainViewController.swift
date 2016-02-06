@@ -8,13 +8,36 @@
 
 import UIKit
 
+enum Categories: String {
+    case Grocery, Houseware, Pharmaceutical, Fuel, Bills, Utilities
+}
+
 class MainViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     
     // MARK: - Properties
     @IBOutlet var tableView: UITableView!
+    @IBOutlet var buttonGroceries: UIButton!
+    @IBOutlet var buttonHouseWare: UIButton!
+    @IBOutlet var buttonPharmaceutical: UIButton!
+    @IBOutlet var buttonFuel: UIButton!
+    @IBOutlet var buttonBills: UIButton!
+    @IBOutlet var buttonUtilities: UIButton!
+    @IBOutlet var imageViewBlurred: UIImageView!
+    
     var selectedIndexPath: NSIndexPath?
-    let storeSavings = StoreSavings()
+    var storeSavings = StoreSavings(fileName: Categories.Grocery.rawValue) {
+        didSet {
+            self.selectedIndexPath = nil
+            self.tableView.reloadData()
+        }
+    }
+    
+    var selectedCategory = Categories.Grocery {
+        didSet {
+            storeSavings = StoreSavings(fileName: selectedCategory.rawValue)
+        }
+    }
     
     // MARK: - View Override Methods
     override func viewDidLoad() {
@@ -24,6 +47,17 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         tableView.estimatedRowHeight = 100
         
         
+        buttonGroceries.alpha = 1
+        buttonHouseWare.alpha = 0.3
+        buttonPharmaceutical.alpha = 0.3
+        buttonFuel.alpha = 0.3
+        buttonBills.alpha = 0.3
+        buttonUtilities.alpha = 0.3
+        
+        
+        let familyImage = UIImage(named: "family1")
+        self.imageViewBlurred.image = UIImageEffects.imageByApplyingBlurToImage(familyImage, withRadius: 20, tintColor: UIColor(red: 0, green: 0, blue: 0, alpha: 0.3), saturationDeltaFactor: 1, maskImage: nil)
+        
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -31,6 +65,42 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         print(self.navigationController?.viewControllers.removeAtIndex(1))
         
     }
+    
+    // MARK: - Instance Methods
+    
+    @IBAction func categoryButtonPressed(sender: UIButton) {
+
+        buttonGroceries.alpha = 0.3
+        buttonHouseWare.alpha = 0.3
+        buttonPharmaceutical.alpha = 0.3
+        buttonFuel.alpha = 0.3
+        buttonBills.alpha = 0.3
+        buttonUtilities.alpha = 0.3
+        
+        switch sender {
+        case buttonGroceries:
+            selectedCategory = .Grocery
+            buttonGroceries.alpha = 1
+        case buttonHouseWare:
+            selectedCategory = .Houseware
+            buttonHouseWare.alpha = 1
+        case buttonPharmaceutical:
+            selectedCategory = .Pharmaceutical
+            buttonPharmaceutical.alpha = 1
+        case buttonFuel:
+            selectedCategory = .Fuel
+            buttonFuel.alpha = 1
+        case buttonBills:
+            selectedCategory = .Bills
+            buttonBills.alpha = 1
+        case buttonUtilities:
+            selectedCategory = .Utilities
+            buttonUtilities.alpha = 1
+        default:
+            break
+        }
+    }
+    
     
     // MARK: - Table View Delegate Methods
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

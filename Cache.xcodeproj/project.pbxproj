@@ -18,8 +18,13 @@
 		DD88C5C31C663CC1009CC4D1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD88C5C21C663CC1009CC4D1 /* MainViewController.swift */; };
 		DDA6DDB61C6684D900752541 /* StoreItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA6DDB51C6684D900752541 /* StoreItem.swift */; };
 		DDA6DDB81C6684E400752541 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA6DDB71C6684E400752541 /* Store.swift */; };
-		DDA6DDBB1C6685C600752541 /* StoreSavings in Resources */ = {isa = PBXBuildFile; fileRef = DDA6DDBA1C6685C600752541 /* StoreSavings */; };
+		DDA6DDBB1C6685C600752541 /* Grocery in Resources */ = {isa = PBXBuildFile; fileRef = DDA6DDBA1C6685C600752541 /* Grocery */; };
 		DDA6DDBD1C668AC600752541 /* StoreSavings.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA6DDBC1C668AC600752541 /* StoreSavings.swift */; };
+		DDA6DDBF1C6698C400752541 /* Houseware in Resources */ = {isa = PBXBuildFile; fileRef = DDA6DDBE1C6698C400752541 /* Houseware */; };
+		DDA6DDC11C6698D500752541 /* Pharmaceutical in Resources */ = {isa = PBXBuildFile; fileRef = DDA6DDC01C6698D500752541 /* Pharmaceutical */; };
+		DDA6DDC31C6698DD00752541 /* Fuel in Resources */ = {isa = PBXBuildFile; fileRef = DDA6DDC21C6698DD00752541 /* Fuel */; };
+		DDA6DDC51C6698E600752541 /* Bills in Resources */ = {isa = PBXBuildFile; fileRef = DDA6DDC41C6698E600752541 /* Bills */; };
+		DDA6DDC71C6698ED00752541 /* Utilities in Resources */ = {isa = PBXBuildFile; fileRef = DDA6DDC61C6698ED00752541 /* Utilities */; };
 		DDB53DAC1C656A7C00832669 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB53DAB1C656A7C00832669 /* AppDelegate.swift */; };
 		DDB53DB11C656A7C00832669 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDB53DAF1C656A7C00832669 /* Main.storyboard */; };
 		DDB53DB31C656A7C00832669 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDB53DB21C656A7C00832669 /* Assets.xcassets */; };
@@ -64,8 +69,13 @@
 		DD88C5C21C663CC1009CC4D1 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		DDA6DDB51C6684D900752541 /* StoreItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreItem.swift; sourceTree = "<group>"; };
 		DDA6DDB71C6684E400752541 /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
-		DDA6DDBA1C6685C600752541 /* StoreSavings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = StoreSavings; sourceTree = "<group>"; };
+		DDA6DDBA1C6685C600752541 /* Grocery */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Grocery; sourceTree = "<group>"; };
 		DDA6DDBC1C668AC600752541 /* StoreSavings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreSavings.swift; sourceTree = "<group>"; };
+		DDA6DDBE1C6698C400752541 /* Houseware */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Houseware; sourceTree = "<group>"; };
+		DDA6DDC01C6698D500752541 /* Pharmaceutical */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Pharmaceutical; sourceTree = "<group>"; };
+		DDA6DDC21C6698DD00752541 /* Fuel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Fuel; sourceTree = "<group>"; };
+		DDA6DDC41C6698E600752541 /* Bills */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Bills; sourceTree = "<group>"; };
+		DDA6DDC61C6698ED00752541 /* Utilities */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Utilities; sourceTree = "<group>"; };
 		DDB53DA81C656A7C00832669 /* Cache.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cache.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDB53DAB1C656A7C00832669 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDB53DB01C656A7C00832669 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -143,7 +153,12 @@
 				DDA6DDBC1C668AC600752541 /* StoreSavings.swift */,
 				DDA6DDB71C6684E400752541 /* Store.swift */,
 				DDA6DDB51C6684D900752541 /* StoreItem.swift */,
-				DDA6DDBA1C6685C600752541 /* StoreSavings */,
+				DDA6DDBA1C6685C600752541 /* Grocery */,
+				DDA6DDBE1C6698C400752541 /* Houseware */,
+				DDA6DDC01C6698D500752541 /* Pharmaceutical */,
+				DDA6DDC21C6698DD00752541 /* Fuel */,
+				DDA6DDC41C6698E600752541 /* Bills */,
+				DDA6DDC61C6698ED00752541 /* Utilities */,
 			);
 			name = Store;
 			sourceTree = "<group>";
@@ -327,10 +342,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDA6DDBB1C6685C600752541 /* StoreSavings in Resources */,
+				DDA6DDBB1C6685C600752541 /* Grocery in Resources */,
+				DDA6DDC11C6698D500752541 /* Pharmaceutical in Resources */,
 				DD88C5B51C65BC50009CC4D1 /* ClanOT in Resources */,
+				DDA6DDBF1C6698C400752541 /* Houseware in Resources */,
 				DDB53DB61C656A7C00832669 /* LaunchScreen.storyboard in Resources */,
 				DDB53DB31C656A7C00832669 /* Assets.xcassets in Resources */,
+				DDA6DDC71C6698ED00752541 /* Utilities in Resources */,
+				DDA6DDC31C6698DD00752541 /* Fuel in Resources */,
+				DDA6DDC51C6698E600752541 /* Bills in Resources */,
 				DDB53DB11C656A7C00832669 /* Main.storyboard in Resources */,
 				DD88C5B31C65B948009CC4D1 /* Lato2OFL in Resources */,
 			);

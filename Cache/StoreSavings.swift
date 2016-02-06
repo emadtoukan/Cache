@@ -12,10 +12,10 @@ class StoreSavings {
     
     let stores: [Store]?
     
-    init() {
+    init(fileName: String) {
         
         var tempStore = [Store]()
-        if let path = NSBundle.mainBundle().pathForResource("StoreSavings", ofType: nil) {
+        if let path = NSBundle.mainBundle().pathForResource(fileName, ofType: nil) {
             let url = NSURL(fileURLWithPath: path)
             let contentsOfFile = NSData(contentsOfURL: url)
             do {
