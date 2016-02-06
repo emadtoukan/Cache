@@ -12,6 +12,11 @@ class StoreTableViewCell: BaseTableViewCell, UITableViewDataSource, UITableViewD
 
     @IBOutlet var tableViewInternal: UITableView!
     @IBOutlet var imageViewStoreImage: UIImageView!
+    @IBOutlet var labelStoreName: UILabel!
+    @IBOutlet var imageViewLocationIcon: UIImageView!
+    @IBOutlet var labelDistanceAway: UILabel!
+    @IBOutlet var labelSavings: UILabel!
+    @IBOutlet var labelPotentialSavings: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -41,7 +46,12 @@ class StoreTableViewCell: BaseTableViewCell, UITableViewDataSource, UITableViewD
         var cell: UITableViewCell?
         
         if indexPath.row < 5 {
-            cell = tableView.dequeueReusableCellWithIdentifier("StoreItemCell", forIndexPath: indexPath)
+            if let storeCell  = tableView.dequeueReusableCellWithIdentifier("StoreItemCell", forIndexPath: indexPath) as? StoreItemTableViewCell {
+                storeCell.setCellContentForItem(indexPath)
+                cell = storeCell
+            }
+            
+            
         } else {
             cell = tableView.dequeueReusableCellWithIdentifier("MoreCell", forIndexPath: indexPath)
         }

@@ -10,6 +10,11 @@ import UIKit
 
 class StoreItemTableViewCell: BaseTableViewCell {
 
+    @IBOutlet var imageViewItemImage: UIImageView!
+    @IBOutlet var labelItemName: UILabel!
+    @IBOutlet var labelSavings: UILabel!
+    @IBOutlet var viewBottomBorder: UIView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -19,6 +24,10 @@ class StoreItemTableViewCell: BaseTableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    func setCellContentForItem(indexPath: NSIndexPath) {
+        viewBottomBorder.hidden = indexPath.row == 4 ? true : false
     }
 
 }
