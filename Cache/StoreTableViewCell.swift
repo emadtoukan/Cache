@@ -10,6 +10,8 @@ import UIKit
 
 class StoreTableViewCell: BaseTableViewCell, UITableViewDataSource, UITableViewDelegate {
 
+    
+    var store: Store?
     @IBOutlet var tableViewInternal: UITableView!
     @IBOutlet var imageViewStoreImage: UIImageView!
     @IBOutlet var labelStoreName: UILabel!
@@ -33,8 +35,13 @@ class StoreTableViewCell: BaseTableViewCell, UITableViewDataSource, UITableViewD
         // Configure the view for the selected state
     }
     
-    func setCellContent(displayDetails: Bool) {
+    func setCellContent(displayDetails: Bool, store: Store?) {
+        self.store = store
         tableViewInternal.hidden = !displayDetails
+        imageViewStoreImage.image = UIImage(named: store?.pictureName ?? "")
+        labelStoreName.text = store?.name
+        labelDistanceAway.text = store?.distanceAway
+        labelSavings.text = store?.potentialSavings
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -47,11 +54,10 @@ class StoreTableViewCell: BaseTableViewCell, UITableViewDataSource, UITableViewD
         
         if indexPath.row < 5 {
             if let storeCell  = tableView.dequeueReusableCellWithIdentifier("StoreItemCell", forIndexPath: indexPath) as? StoreItemTableViewCell {
-                storeCell.setCellContentForItem(indexPath)
+                let storeItem = store?.items?[indexPath.row]
+                storeCell.setCellContentForItem(indexPath, storeItem: storeItem)
                 cell = storeCell
             }
-            
-            
         } else {
             cell = tableView.dequeueReusableCellWithIdentifier("MoreCell", forIndexPath: indexPath)
         }

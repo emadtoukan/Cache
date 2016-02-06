@@ -14,6 +14,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     // MARK: - Properties
     @IBOutlet var tableView: UITableView!
     var selectedIndexPath: NSIndexPath?
+    let storeSavings = StoreSavings()
     
     // MARK: - View Override Methods
     override func viewDidLoad() {
@@ -21,6 +22,8 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
 
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 100
+        
+        
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -29,11 +32,9 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         
     }
     
-    
-    
     // MARK: - Table View Delegate Methods
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 50
+        return storeSavings.stores?.count ?? 0
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -41,7 +42,8 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
             return UITableViewCell()
         }
         
-        cell.setCellContent(indexPath == selectedIndexPath)
+        let store = storeSavings.stores?[indexPath.row]
+        cell.setCellContent(indexPath == selectedIndexPath, store: store)
         return cell
     }
     

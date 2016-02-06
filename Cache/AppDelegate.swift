@@ -22,6 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.setupParse(launchOptions)
         self.setupNotifications(application, launchOptions: launchOptions)
         self.setupSVProgress()
+                
         return true
     }
 
