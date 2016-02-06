@@ -26,6 +26,7 @@
             <string>ClanOT-Book</string>
             <string>ClanOT-Book</string>
             <string>ClanOT-Book</string>
+            <string>ClanOT-Book</string>
         </mutableArray>
         <mutableArray key="ClanOT-Medium.otf">
             <string>ClanOT-Medium</string>
@@ -255,7 +256,7 @@
                         <outlet property="imageViewBackground" destination="amC-Hr-iHQ" id="m3b-4a-862"/>
                         <outlet property="textfieldPIN" destination="MT3-NK-N8N" id="zhf-0R-wYf"/>
                         <outlet property="textfieldScotiaCard" destination="nrR-3C-5wG" id="5Yy-jb-R6c"/>
-                        <segue destination="CGY-Za-Eru" kind="show" identifier="showMainView" id="PcF-hT-F3f"/>
+                        <segue destination="RZP-T7-Gkn" kind="show" identifier="showMainView" id="PcF-hT-F3f"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fIK-Ba-EHW" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -280,13 +281,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="B0Z-pC-yp3">
-                                <rect key="frame" x="0.0" y="44" width="600" height="556"/>
+                                <rect key="frame" x="0.0" y="44" width="600" height="507"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Kf-v4-dEZ">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YOUR SAVINGS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="761-fg-0yD">
-                                                <rect key="frame" x="237" y="31" width="126" height="22"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="YOUR SAVINGS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="761-fg-0yD">
+                                                <rect key="frame" x="238" y="32" width="125" height="20"/>
                                                 <fontDescription key="fontDescription" name="ClanOT-Bold" family="ClanOT" pointSize="17"/>
                                                 <color key="textColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -300,15 +301,23 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b1O-ky-P8g">
-                                        <rect key="frame" x="0.0" y="64" width="600" height="100"/>
+                                        <rect key="frame" x="0.0" y="64" width="600" height="120"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RJJ-Il-7cB">
-                                                <rect key="frame" x="0.0" y="0.0" width="600" height="100"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="600" height="120"/>
                                             </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="2 more cache till next reward" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H4i-8H-Aog">
+                                                <rect key="frame" x="216" y="94" width="168" height="16"/>
+                                                <fontDescription key="fontDescription" name="ClanOT-Book" family="ClanOT" pointSize="13"/>
+                                                <color key="textColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="100" id="Lkr-1g-34y"/>
+                                            <constraint firstItem="H4i-8H-Aog" firstAttribute="centerX" secondItem="b1O-ky-P8g" secondAttribute="centerX" id="Cjr-An-S2O"/>
+                                            <constraint firstAttribute="height" constant="120" id="Lkr-1g-34y"/>
+                                            <constraint firstItem="H4i-8H-Aog" firstAttribute="bottom" secondItem="b1O-ky-P8g" secondAttribute="bottom" constant="-10" id="Mct-HG-U8X"/>
                                             <constraint firstItem="RJJ-Il-7cB" firstAttribute="leading" secondItem="b1O-ky-P8g" secondAttribute="leading" id="RVK-bI-JIL"/>
                                             <constraint firstItem="RJJ-Il-7cB" firstAttribute="bottom" secondItem="b1O-ky-P8g" secondAttribute="bottom" id="oEw-oP-0v7"/>
                                             <constraint firstItem="RJJ-Il-7cB" firstAttribute="top" secondItem="b1O-ky-P8g" secondAttribute="top" id="zkN-Js-kcK"/>
@@ -316,15 +325,15 @@
                                         </constraints>
                                     </view>
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="86P-cT-WAz">
-                                        <rect key="frame" x="0.0" y="164" width="600" height="50"/>
+                                        <rect key="frame" x="0.0" y="184" width="600" height="50"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Vy-tH-WlJ">
-                                                <rect key="frame" x="0.0" y="0.0" width="571" height="50"/>
+                                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Vy-tH-WlJ">
+                                                <rect key="frame" x="0.0" y="0.0" width="564" height="50"/>
                                                 <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="upu-4T-g4d">
+                                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="upu-4T-g4d">
                                                         <rect key="frame" x="8" y="0.0" width="555" height="50"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vvq-Sr-9Ly">
+                                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vvq-Sr-9Ly">
                                                                 <rect key="frame" x="0.0" y="0.0" width="84" height="50"/>
                                                                 <fontDescription key="fontDescription" name="ClanOT-Black" family="ClanOT" pointSize="15"/>
                                                                 <state key="normal" title="GROCERIES">
@@ -334,7 +343,7 @@
                                                                     <action selector="categoryButtonPressed:" destination="CGY-Za-Eru" eventType="touchUpInside" id="On2-wg-dFJ"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2BP-AL-Ixg">
+                                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2BP-AL-Ixg">
                                                                 <rect key="frame" x="99" y="0.0" width="97" height="50"/>
                                                                 <fontDescription key="fontDescription" name="ClanOT-Black" family="ClanOT" pointSize="15"/>
                                                                 <state key="normal" title="HOUSEWARE">
@@ -344,7 +353,7 @@
                                                                     <action selector="categoryButtonPressed:" destination="CGY-Za-Eru" eventType="touchUpInside" id="GDb-bS-dny"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4g3-Sa-Ta5">
+                                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4g3-Sa-Ta5">
                                                                 <rect key="frame" x="211" y="0.0" width="148" height="50"/>
                                                                 <fontDescription key="fontDescription" name="ClanOT-Black" family="ClanOT" pointSize="15"/>
                                                                 <state key="normal" title="PHARMACEUTICALS">
@@ -354,7 +363,7 @@
                                                                     <action selector="categoryButtonPressed:" destination="CGY-Za-Eru" eventType="touchUpInside" id="cWs-rs-Byl"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L33-0P-D9r">
+                                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L33-0P-D9r">
                                                                 <rect key="frame" x="374" y="0.0" width="38" height="50"/>
                                                                 <fontDescription key="fontDescription" name="ClanOT-Black" family="ClanOT" pointSize="15"/>
                                                                 <state key="normal" title="FUEL">
@@ -364,7 +373,7 @@
                                                                     <action selector="categoryButtonPressed:" destination="CGY-Za-Eru" eventType="touchUpInside" id="UNF-ms-Vb8"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yyg-0x-crA">
+                                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yyg-0x-crA">
                                                                 <rect key="frame" x="427" y="0.0" width="42" height="50"/>
                                                                 <fontDescription key="fontDescription" name="ClanOT-Black" family="ClanOT" pointSize="15"/>
                                                                 <state key="normal" title="BILLS">
@@ -374,7 +383,7 @@
                                                                     <action selector="categoryButtonPressed:" destination="CGY-Za-Eru" eventType="touchUpInside" id="TUU-cg-sov"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m6M-XJ-XE9">
+                                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m6M-XJ-XE9">
                                                                 <rect key="frame" x="484" y="0.0" width="71" height="50"/>
                                                                 <fontDescription key="fontDescription" name="ClanOT-Black" family="ClanOT" pointSize="15"/>
                                                                 <state key="normal" title="UTILITIES">
@@ -409,7 +418,7 @@
                                         </constraints>
                                     </scrollView>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="G2m-jO-fIK">
-                                        <rect key="frame" x="0.0" y="214" width="600" height="342"/>
+                                        <rect key="frame" x="0.0" y="234" width="600" height="273"/>
                                         <color key="backgroundColor" red="0.92549019607843142" green="0.92549019607843142" blue="0.92549019607843142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="StoreCell" rowHeight="279" id="9bI-zh-mve" customClass="StoreTableViewCell" customModule="Cache" customModuleProvider="target">
@@ -435,13 +444,13 @@
                                                                         <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Tbc-by-mH0">
                                                                             <rect key="frame" x="100" y="18" width="85" height="34"/>
                                                                             <subviews>
-                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Metro Inc." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z1y-vE-C6A">
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Metro Inc." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z1y-vE-C6A">
                                                                                     <rect key="frame" x="0.0" y="0.0" width="85" height="22"/>
                                                                                     <fontDescription key="fontDescription" name="ClanOT-Bold" family="ClanOT" pointSize="17"/>
                                                                                     <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                                     <nil key="highlightedColor"/>
                                                                                 </label>
-                                                                                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="uB4-fe-saR">
+                                                                                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="uB4-fe-saR">
                                                                                     <rect key="frame" x="0.0" y="22" width="54" height="12"/>
                                                                                     <subviews>
                                                                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Location" translatesAutoresizingMaskIntoConstraints="NO" id="Wr7-JA-sqN">
@@ -451,7 +460,7 @@
                                                                                                 <constraint firstAttribute="width" constant="12" id="UbA-NJ-0WN"/>
                                                                                             </constraints>
                                                                                         </imageView>
-                                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="2.3 km" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="65L-jl-td8">
+                                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="2.3 km" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="65L-jl-td8">
                                                                                             <rect key="frame" x="17" y="0.0" width="37" height="12"/>
                                                                                             <fontDescription key="fontDescription" name="ClanOT-Thin" family="ClanOT" pointSize="11"/>
                                                                                             <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -464,13 +473,13 @@
                                                                         <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="rTH-s2-yg5">
                                                                             <rect key="frame" x="454" y="15" width="92" height="36"/>
                                                                             <subviews>
-                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="$2 - $6" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qdo-sX-MLS">
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="$2 - $6" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qdo-sX-MLS">
                                                                                     <rect key="frame" x="0.0" y="0.0" width="92" height="22"/>
                                                                                     <fontDescription key="fontDescription" name="ClanOT-Black" family="ClanOT" pointSize="17"/>
                                                                                     <color key="textColor" red="0.31764705879999999" green="0.70588235290000001" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
                                                                                     <nil key="highlightedColor"/>
                                                                                 </label>
-                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Potential savings" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GKZ-5P-6nP">
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Potential savings" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GKZ-5P-6nP">
                                                                                     <rect key="frame" x="0.0" y="22" width="92" height="14"/>
                                                                                     <fontDescription key="fontDescription" name="ClanOT-Thin" family="ClanOT" pointSize="11"/>
                                                                                     <color key="textColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -637,6 +646,7 @@
                             <constraint firstItem="B0Z-pC-yp3" firstAttribute="bottom" secondItem="Xvz-90-JeW" secondAttribute="top" id="wFU-l4-tcV"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" image="Savings" id="X1o-lZ-jRW"/>
                     <connections>
                         <outlet property="buttonBills" destination="yyg-0x-crA" id="21X-fM-uPc"/>
                         <outlet property="buttonFuel" destination="L33-0P-D9r" id="Jik-Fy-OwB"/>
@@ -646,11 +656,50 @@
                         <outlet property="buttonUtilities" destination="m6M-XJ-XE9" id="TLd-UN-5ab"/>
                         <outlet property="imageViewBlurred" destination="RJJ-Il-7cB" id="MlT-C2-cWb"/>
                         <outlet property="tableView" destination="G2m-jO-fIK" id="5vO-jO-tw8"/>
+                        <outlet property="viewCircleContainerView" destination="b1O-ky-P8g" id="I5Q-Ze-ddq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fTq-OW-bmX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2767" y="406"/>
+            <point key="canvasLocation" x="3579" y="406"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="m6C-z6-o3f">
+            <objects>
+                <viewController id="HHP-8g-Aqr" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="orl-ug-PaS"/>
+                        <viewControllerLayoutGuide type="bottom" id="pnj-79-arB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ScD-HL-RXI">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="Camera" id="fLA-OE-ig1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zN1-P9-Jvd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3579" y="1151"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="9bB-2N-UvO">
+            <objects>
+                <viewController id="y0f-aM-Btd" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Cmy-XW-Alb"/>
+                        <viewControllerLayoutGuide type="bottom" id="HQI-6n-7Tg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rri-rm-n9V">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="Accounts" id="WOn-Pg-PT2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="muy-1e-Yb8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3592" y="1877"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="1p7-o7-Gus">
@@ -670,12 +719,35 @@
             </objects>
             <point key="canvasLocation" x="628" y="406"/>
         </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="W2g-St-31J">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="RZP-T7-Gkn" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="Ofi-wu-HeL">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="CGY-Za-Eru" kind="relationship" relationship="viewControllers" id="xW6-ns-eb4"/>
+                        <segue destination="HHP-8g-Aqr" kind="relationship" relationship="viewControllers" id="DQ0-3d-wUx"/>
+                        <segue destination="y0f-aM-Btd" kind="relationship" relationship="viewControllers" id="o3w-5D-Aaf"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tOo-p6-hXb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2767" y="406"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="Accounts" width="26" height="26"/>
         <image name="Back Arrow" width="72" height="72"/>
+        <image name="Camera" width="31" height="31"/>
         <image name="Credit Card" width="72" height="72"/>
         <image name="Location" width="46" height="56"/>
         <image name="Lock" width="72" height="72"/>
+        <image name="Savings" width="29" height="30"/>
         <image name="family1" width="736" height="1104"/>
     </resources>
 </document>

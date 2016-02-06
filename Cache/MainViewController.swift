@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import PNChart
 
 enum Categories: String {
     case Grocery, Houseware, Pharmaceutical, Fuel, Bills, Utilities
@@ -24,6 +25,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBOutlet var buttonBills: UIButton!
     @IBOutlet var buttonUtilities: UIButton!
     @IBOutlet var imageViewBlurred: UIImageView!
+    @IBOutlet var viewCircleContainerView: UIView!
     
     var selectedIndexPath: NSIndexPath?
     var storeSavings = StoreSavings(fileName: Categories.Grocery.rawValue) {
@@ -42,7 +44,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     // MARK: - View Override Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 100
         
@@ -55,15 +57,25 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         buttonUtilities.alpha = 0.3
         
         
-        let familyImage = UIImage(named: "family1")
-        self.imageViewBlurred.image = UIImageEffects.imageByApplyingBlurToImage(familyImage, withRadius: 20, tintColor: UIColor(red: 0, green: 0, blue: 0, alpha: 0.3), saturationDeltaFactor: 1, maskImage: nil)
+        let familyImage = UIImage(named: "family7")
+        self.imageViewBlurred.image = UIImageEffects.imageByApplyingBlurToImage(familyImage, withRadius: 20, tintColor: UIColor(red: 0, green: 0, blue: 0, alpha: 0.5), saturationDeltaFactor: 1, maskImage: nil)
+        
+        
+        let cricleDiameter = CGFloat(80)
+        let cricleFrame = CGRectMake(viewCircleContainerView.bounds.size.width/4, 70, cricleDiameter, cricleDiameter)
+        let circleChart = PNCircleChart(frame: cricleFrame, total: 100, current: 65, clockwise: true, shadow: true, shadowColor: UIColor(red: 213/255, green: 213/255, blue: 213/255, alpha: 0.8), displayCountingLabel: true, overrideLineWidth: 5)
+        circleChart.strokeColor = UIColor(red: 225/255, green: 115/255, blue: 110/255, alpha: 1)
+        circleChart.countingLabel.textColor = UIColor(red: 213/255, green: 213/255, blue: 213/255, alpha: 0.8)
+        self.view.addSubview(circleChart)
+        circleChart.strokeChart()
         
     }
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        print(self.navigationController?.viewControllers.removeAtIndex(1))
-        
+        if self.navigationController?.viewControllers.count == 2 {
+            self.navigationController?.viewControllers.removeAtIndex(1)
+        }
     }
     
     // MARK: - Instance Methods

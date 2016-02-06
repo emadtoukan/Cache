@@ -6,3 +6,4 @@
 #import "UIImageEffects.h"
 
 #import "SVProgressHUD/SVProgressHUD.h"
+#import "PNChart/PNChart.h"
