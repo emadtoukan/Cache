@@ -16,6 +16,7 @@ class AccountsTableViewCell: UITableViewCell {
     @IBOutlet var imageView2: UIImageView!
     @IBOutlet var labelAmount: UILabel!
     @IBOutlet var labelDate: UILabel!
+    @IBOutlet weak var viewSideBar: UIView!
     
     
     override func awakeFromNib() {

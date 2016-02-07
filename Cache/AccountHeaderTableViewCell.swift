@@ -11,6 +11,7 @@ import UIKit
 class AccountHeaderTableViewCell: UITableViewCell {
     
     @IBOutlet var labelName: UILabel!
+    @IBOutlet weak var viewSideBar: UIView!
 
     override func awakeFromNib() {
         super.awakeFromNib()

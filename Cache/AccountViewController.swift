@@ -50,14 +50,28 @@ class AccountViewController: UIViewController, UITableViewDelegate, UITableViewD
             case 0:
                 if let tempCell = tableView.dequeueReusableCellWithIdentifier("CellHeader", forIndexPath: indexPath) as? AccountHeaderTableViewCell {
                     tempCell.labelName.text = "BANKING"
+                    tempCell.viewSideBar.backgroundColor = UIColor(red: 104/255, green: 169/255, blue: 159/255, alpha: 1)
+                    tempCell.labelName.textColor = UIColor(red: 104/255, green: 169/255, blue: 159/255, alpha: 1)
                     cell = tempCell
                 }
             case 1:
                 if let tempCell = tableView.dequeueReusableCellWithIdentifier("AccountCell", forIndexPath: indexPath) as? AccountsTableViewCell {
+                    tempCell.viewSideBar.backgroundColor = UIColor(red: 104/255, green: 169/255, blue: 159/255, alpha: 1)
+                    tempCell.labelAccountName.text = "Momentum Chequing Account"
+                    tempCell.labelAccountNumber.text = "40592 01686 65"
+                    tempCell.labelAmount.text = "$2,304.65"
+                    tempCell.labelDate.text = "Jun 7, 2015"
                     cell = tempCell
+                    
                 }
             case 2:
                 if let tempCell = tableView.dequeueReusableCellWithIdentifier("AccountCell", forIndexPath: indexPath) as? AccountsTableViewCell {
+                    tempCell.viewSideBar.backgroundColor = UIColor(red: 104/255, green: 169/255, blue: 159/255, alpha: 1)
+                    tempCell.labelAccountName.text = "Momentum Chequing Account"
+                    tempCell.labelAccountNumber.text = "40592 21346 51"
+                    tempCell.labelAmount.text = "$5,150.43"
+                    tempCell.labelDate.text = "Jan 19, 2014"
+                    tempCell.imageView2.hidden = true
                     cell = tempCell
                 }
             default:
@@ -68,14 +82,28 @@ class AccountViewController: UIViewController, UITableViewDelegate, UITableViewD
             case 0:
                 if let tempCell = tableView.dequeueReusableCellWithIdentifier("CellHeader", forIndexPath: indexPath) as? AccountHeaderTableViewCell {
                     tempCell.labelName.text = "BORROWING"
+                    tempCell.labelName.textColor = UIColor(red: 204/255, green: 109/255, blue: 107/255, alpha: 1)
+                    tempCell.viewSideBar.backgroundColor = UIColor(red: 204/255, green: 109/255, blue: 107/255, alpha: 1)
                     cell = tempCell
                 }
             case 1:
                 if let tempCell = tableView.dequeueReusableCellWithIdentifier("AccountCell", forIndexPath: indexPath) as? AccountsTableViewCell {
+                    tempCell.viewSideBar.backgroundColor = UIColor(red: 204/255, green: 109/255, blue: 107/255, alpha: 1)
+                    tempCell.labelAccountName.text = "GM VISA Card"
+                    tempCell.labelAccountNumber.text = "40593 21534 37"
+                    tempCell.labelAmount.text = "$3,531.91"
+                    tempCell.labelDate.text = "Dec 19, 2015"
+                    tempCell.imageView2.hidden = true
                     cell = tempCell
                 }
             case 2:
                 if let tempCell = tableView.dequeueReusableCellWithIdentifier("AccountCell", forIndexPath: indexPath) as? AccountsTableViewCell {
+                    tempCell.viewSideBar.backgroundColor = UIColor(red: 204/255, green: 109/255, blue: 107/255, alpha: 1)
+                    tempCell.labelAccountName.text = "ScotiaLine Personal"
+                    tempCell.labelAccountNumber.text = "40592 85937 36"
+                    tempCell.labelAmount.text = "$3,356.83"
+                    tempCell.labelDate.text = "Nov 16, 2011"
+                    tempCell.imageView2.hidden = true
                     cell = tempCell
                 }
             default:
