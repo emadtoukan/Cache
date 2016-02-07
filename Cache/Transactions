@@ -1,0 +1,57 @@
+[{
+"name": "Loblaws Food Store",
+"date": "Feb 3, 2016",
+"address": "22 Saint Claire Ave E.",
+"total": "$138.75",
+"saved": "--",
+"image": ""
+}, {
+"name": "Esso Gas Station",
+"date": "Feb 2, 2016",
+"address": "188 Gerrard St E",
+"total": "$58.66",
+"saved": "--",
+"image": ""
+}, {
+"name": "Toronto Hydro",
+"date": "Feb 1, 2016",
+"address": "14 Carlton St",
+"total": "$47.00",
+"saved": "$7.00",
+"image": "receipt3"
+}, {
+"name": "Shoppers Drug Mart",
+"date": "Jan 28, 2016",
+"address": "1630 Danforth Ave",
+"total": "$38.50",
+"saved": "$2.45",
+"image": "receipt1"
+}, {
+"name": "Husky Fuel",
+"date": "Jan 19, 2016",
+"address": "30 Laird Dr",
+"total": "$52.50",
+"saved": "$2.88",
+"image": "receipt2"
+}, {
+"name": "No Frills",
+"date": "Jan 18, 2016",
+"address": "269 Coxwell Ave",
+"total": "$68.90",
+"saved": "$4.15",
+"image": "receipt1"
+}, {
+"name": "Walmart",
+"date": "Jan 5, 2016",
+"address": "1000 Gerrard St",
+"total": "$96.15",
+"saved": "$6.88",
+"image": "receipt1"
+}, {
+"name": "Rexall",
+"date": "Jan 2, 2016",
+"address": "1630 Danforth Ave",
+"total": "$24.50",
+"saved": "$2.88",
+"image": "receipt2"
+}]

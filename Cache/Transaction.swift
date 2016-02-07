@@ -18,11 +18,11 @@ class Transaction {
     let receiptPictureName: String?
     
     init(json: [String: AnyObject]) {
-        storeName = json[""] as? String
-        receiptDate = json[""] as? String
-        address = json[""] as? String
-        amountSpent = json[""] as? String
-        totalSave = json[""] as? String
-        receiptPictureName = json[""] as? String
+        storeName = json["name"] as? String
+        receiptDate = json["date"] as? String
+        address = json["address"] as? String
+        amountSpent = json["total"] as? String
+        totalSave = json["saved"] as? String
+        receiptPictureName = json["image"] as? String
     }
 }

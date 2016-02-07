@@ -82,6 +82,10 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         }
     }
     
+    
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return .Default
+    }
     // MARK: - Navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "showStoreItems" {
