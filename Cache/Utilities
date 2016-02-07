@@ -1,1 +1,28 @@
-[{"storeName":"Utitlies","totalPotentialSaving":"$4-$7","kmAway":"2.3km", "items":[{"pictureName":"picture1","title":"Macintosh Apple","saving":"$0.27"},{"pictureName":"picture2","title":"Bananas","saving":"$0.65"},{"pictureName":"picture3","title":"Mezzetta Marinara","saving":"$1.50"},{"pictureName":"picture4","title":"Red Bell Pepper","saving":"$0.80"},{"pictureName":"picture5","title":"Minute Maid Orange Juice","saving":"$1.20"},{"pictureName":"picture6","title":"picture","saving":""},{"pictureName":"picture7","title":"picture","saving":""}]}]
+[{
+"storeName": "Enercare Connections",
+"storePicture": "enercare",
+"totalPotentialSaving": "$18 - $24",
+"kmAway": "15km",
+"items": [{
+"pictureName": "led",
+"title": "Switch to LEDs",
+"saving": "$7.65"
+}, {
+"pictureName": "lightoff",
+"title": "Turn off your lights",
+"saving": "$5.50"
+}, {
+"pictureName": "unplug",
+"title": "Unplug unused appliances",
+"saving": "$4.50"
+}, {
+"pictureName": "offpeak",
+"title": "Use power in offpeak times",
+"saving": "$3.30"
+}, {
+"pictureName": "thermostat",
+"title": "Program your thermostat",
+"saving": "$4.25"
+}]
+}
+]
