@@ -25,7 +25,9 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBOutlet var buttonUtilities: UIButton!
     @IBOutlet var imageViewBlurred: UIImageView!
     @IBOutlet var viewCircleContainerView: UIView!
-    
+    @IBOutlet var labelSavingsValue: UILabel!
+
+    var circleChart: PNCircleChart?
     var selectedIndexPath: NSIndexPath?
     var storeSavings = StoreSavings(fileName: Categories.Grocery.rawValue) {
         didSet {
@@ -55,16 +57,18 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         
         let familyImage = UIImage(named: "family7")
-        self.imageViewBlurred.image = UIImageEffects.imageByApplyingBlurToImage(familyImage, withRadius: 20, tintColor: UIColor(red: 0, green: 0, blue: 0, alpha: 0.5), saturationDeltaFactor: 1, maskImage: nil)
+        self.imageViewBlurred.image = UIImageEffects.imageByApplyingBlurToImage(familyImage, withRadius: 20, tintColor: UIColor(red: 0, green: 0, blue: 0, alpha: 0.75), saturationDeltaFactor: 1, maskImage: nil)
         
         
         let cricleDiameter = CGFloat(80)
         let cricleFrame = CGRectMake(viewCircleContainerView.bounds.size.width/4, 70, cricleDiameter, cricleDiameter)
-        let circleChart = PNCircleChart(frame: cricleFrame, total: 100, current: 65, clockwise: true, shadow: true, shadowColor: UIColor(red: 213/255, green: 213/255, blue: 213/255, alpha: 0.8), displayCountingLabel: true, overrideLineWidth: 5)
-        circleChart.strokeColor = UIColor(red: 225/255, green: 115/255, blue: 110/255, alpha: 1)
-        circleChart.countingLabel.textColor = UIColor(red: 213/255, green: 213/255, blue: 213/255, alpha: 0.8)
-        self.view.addSubview(circleChart)
-        circleChart.strokeChart()
+        circleChart = PNCircleChart(frame: cricleFrame, total: 100, current: 70, clockwise: true, shadow: true, shadowColor: UIColor(red: 213/255, green: 213/255, blue: 213/255, alpha: 0.8), displayCountingLabel: false, overrideLineWidth: 5)
+        circleChart?.strokeColor = UIColor(red: 225/255, green: 115/255, blue: 110/255, alpha: 1)
+        circleChart?.countingLabel.textColor = UIColor(red: 213/255, green: 213/255, blue: 213/255, alpha: 0.8)
+        self.view.addSubview(circleChart!)
+        circleChart?.strokeChart()
+        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "newReceiptSelected", name: "NEW_RECEIPT_SCANNED", object: nil)
         
     }
     
@@ -117,6 +121,16 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func showMoreStoreItems(store: Store) {
         self.performSegueWithIdentifier("showStoreItems", sender: store)
+    }
+    
+    func newReceiptSelected() {
+        print("I got something in here!")
+        circleChart?.updateChartByCurrent(100)
+        
+        for index in 1...15 {
+            labelSavingsValue.text = "$\(35+index).00"
+        }
+        
     }
     // MARK: - Table View Delegate Methods
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

@@ -18,6 +18,7 @@
             <string>ClanOT-Black</string>
             <string>ClanOT-Black</string>
             <string>ClanOT-Black</string>
+            <string>ClanOT-Black</string>
         </mutableArray>
         <mutableArray key="ClanOT-Bold.otf">
             <string>ClanOT-Bold</string>
@@ -36,8 +37,10 @@
             <string>ClanOT-Book</string>
             <string>ClanOT-Book</string>
             <string>ClanOT-Book</string>
+            <string>ClanOT-Book</string>
         </mutableArray>
         <mutableArray key="ClanOT-Medium.otf">
+            <string>ClanOT-Medium</string>
             <string>ClanOT-Medium</string>
             <string>ClanOT-Medium</string>
             <string>ClanOT-Medium</string>
@@ -297,8 +300,8 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Kf-v4-dEZ">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="YOUR SAVINGS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="761-fg-0yD">
-                                                <rect key="frame" x="238" y="32" width="126" height="22"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YOUR SAVINGS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="761-fg-0yD">
+                                                <rect key="frame" x="237" y="31" width="126" height="22"/>
                                                 <fontDescription key="fontDescription" name="ClanOT-Bold" family="ClanOT" pointSize="17"/>
                                                 <color key="textColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -317,19 +320,36 @@
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RJJ-Il-7cB">
                                                 <rect key="frame" x="0.0" y="0.0" width="600" height="120"/>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="2 more cache till next reward" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H4i-8H-Aog">
-                                                <rect key="frame" x="216" y="94" width="168" height="16"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2 more cache till next reward" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H4i-8H-Aog">
+                                                <rect key="frame" x="206" y="93" width="188" height="17"/>
                                                 <fontDescription key="fontDescription" name="ClanOT-Book" family="ClanOT" pointSize="13"/>
                                                 <color key="textColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Awards" translatesAutoresizingMaskIntoConstraints="NO" id="wrC-Ry-5xV">
+                                                <rect key="frame" x="510" y="15" width="75" height="35"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="35" id="Van-bT-2gp"/>
+                                                    <constraint firstAttribute="width" constant="75" id="kw3-H2-LYE"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.75" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$35.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pWb-2F-BWY">
+                                                <rect key="frame" x="273" y="35" width="58" height="22"/>
+                                                <fontDescription key="fontDescription" name="ClanOT-Black" family="ClanOT" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
+                                            <constraint firstItem="wrC-Ry-5xV" firstAttribute="trailing" secondItem="RJJ-Il-7cB" secondAttribute="trailing" constant="-15" id="5ih-MM-sD0"/>
                                             <constraint firstItem="H4i-8H-Aog" firstAttribute="centerX" secondItem="b1O-ky-P8g" secondAttribute="centerX" id="Cjr-An-S2O"/>
                                             <constraint firstAttribute="height" constant="120" id="Lkr-1g-34y"/>
                                             <constraint firstItem="H4i-8H-Aog" firstAttribute="bottom" secondItem="b1O-ky-P8g" secondAttribute="bottom" constant="-10" id="Mct-HG-U8X"/>
                                             <constraint firstItem="RJJ-Il-7cB" firstAttribute="leading" secondItem="b1O-ky-P8g" secondAttribute="leading" id="RVK-bI-JIL"/>
+                                            <constraint firstItem="pWb-2F-BWY" firstAttribute="centerY" secondItem="b1O-ky-P8g" secondAttribute="centerY" constant="-14" id="T56-tr-vUu"/>
+                                            <constraint firstItem="pWb-2F-BWY" firstAttribute="centerX" secondItem="b1O-ky-P8g" secondAttribute="centerX" constant="2" id="iwR-6k-Ly8"/>
+                                            <constraint firstItem="wrC-Ry-5xV" firstAttribute="top" secondItem="RJJ-Il-7cB" secondAttribute="top" constant="15" id="mPU-D1-zWO"/>
                                             <constraint firstItem="RJJ-Il-7cB" firstAttribute="bottom" secondItem="b1O-ky-P8g" secondAttribute="bottom" id="oEw-oP-0v7"/>
                                             <constraint firstItem="RJJ-Il-7cB" firstAttribute="top" secondItem="b1O-ky-P8g" secondAttribute="top" id="zkN-Js-kcK"/>
                                             <constraint firstItem="RJJ-Il-7cB" firstAttribute="trailing" secondItem="b1O-ky-P8g" secondAttribute="trailing" id="zwF-bm-3H5"/>
@@ -338,8 +358,8 @@
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="86P-cT-WAz">
                                         <rect key="frame" x="0.0" y="184" width="600" height="50"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Vy-tH-WlJ">
-                                                <rect key="frame" x="0.0" y="0.0" width="564" height="50"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Vy-tH-WlJ">
+                                                <rect key="frame" x="0.0" y="0.0" width="515" height="50"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="upu-4T-g4d">
                                                         <rect key="frame" x="8" y="0.0" width="499" height="50"/>
@@ -655,6 +675,7 @@
                         <outlet property="buttonPharmaceutical" destination="4g3-Sa-Ta5" id="yih-pk-0WA"/>
                         <outlet property="buttonUtilities" destination="m6M-XJ-XE9" id="TLd-UN-5ab"/>
                         <outlet property="imageViewBlurred" destination="RJJ-Il-7cB" id="MlT-C2-cWb"/>
+                        <outlet property="labelSavingsValue" destination="pWb-2F-BWY" id="odB-yY-bF8"/>
                         <outlet property="tableView" destination="G2m-jO-fIK" id="5vO-jO-tw8"/>
                         <outlet property="viewCircleContainerView" destination="b1O-ky-P8g" id="I5Q-Ze-ddq"/>
                         <segue destination="z0b-wY-CUw" kind="show" identifier="showStoreItems" id="tVG-Ws-NRi"/>
@@ -708,9 +729,70 @@
                                             <constraint firstItem="kFB-St-qsO" firstAttribute="centerY" secondItem="WuE-Sw-t5x" secondAttribute="centerY" constant="10" id="TnP-Gq-nI3"/>
                                         </constraints>
                                     </view>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UOd-to-MSq">
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="54" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UOd-to-MSq">
                                         <rect key="frame" x="0.0" y="64" width="600" height="487"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="StoreItemCell" rowHeight="31" id="k5y-FN-3d5" customClass="StoreItemTableViewCell" customModule="Cache" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="28" width="600" height="31"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="k5y-FN-3d5" id="KBk-J8-jH2">
+                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="31"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Credit Card" translatesAutoresizingMaskIntoConstraints="NO" id="ZOh-qM-8KQ">
+                                                            <rect key="frame" x="35" y="0.0" width="35" height="35"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="35" id="65c-w4-2Fr"/>
+                                                                <constraint firstAttribute="width" constant="35" id="t3z-BJ-FOq"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fLZ-KH-d8D">
+                                                            <rect key="frame" x="90" y="9" width="35" height="17"/>
+                                                            <fontDescription key="fontDescription" name="ClanOT-Book" family="ClanOT" pointSize="13"/>
+                                                            <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="$2" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kpi-8N-hIl">
+                                                            <rect key="frame" x="546" y="8" width="18" height="18"/>
+                                                            <fontDescription key="fontDescription" name="ClanOT-Medium" family="ClanOT" pointSize="14"/>
+                                                            <color key="textColor" red="0.31764705879999999" green="0.70588235290000001" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <view alpha="0.15000000596046448" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gkl-UU-UX5">
+                                                            <rect key="frame" x="38" y="34" width="546" height="1"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="1" id="AFQ-7r-pDw"/>
+                                                            </constraints>
+                                                        </view>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="gkl-UU-UX5" firstAttribute="leading" secondItem="KBk-J8-jH2" secondAttribute="leadingMargin" constant="30" id="39A-IZ-ZCH"/>
+                                                        <constraint firstItem="gkl-UU-UX5" firstAttribute="trailing" secondItem="KBk-J8-jH2" secondAttribute="trailing" id="CAg-Pt-kJF"/>
+                                                        <constraint firstItem="fLZ-KH-d8D" firstAttribute="centerY" secondItem="ZOh-qM-8KQ" secondAttribute="centerY" id="IFz-qP-HGb"/>
+                                                        <constraint firstItem="kpi-8N-hIl" firstAttribute="centerY" secondItem="fLZ-KH-d8D" secondAttribute="centerY" id="JkY-Oc-Wce"/>
+                                                        <constraint firstItem="fLZ-KH-d8D" firstAttribute="leading" secondItem="ZOh-qM-8KQ" secondAttribute="trailing" constant="20" id="MrW-bK-qGY"/>
+                                                        <constraint firstItem="ZOh-qM-8KQ" firstAttribute="leading" secondItem="KBk-J8-jH2" secondAttribute="leading" constant="35" id="Oot-cU-wHF"/>
+                                                        <constraint firstItem="kpi-8N-hIl" firstAttribute="trailing" secondItem="KBk-J8-jH2" secondAttribute="trailing" constant="-20" id="ZxI-4I-BV1"/>
+                                                        <constraint firstAttribute="bottom" secondItem="ZOh-qM-8KQ" secondAttribute="bottom" id="pib-IF-cgu"/>
+                                                        <constraint firstItem="gkl-UU-UX5" firstAttribute="bottom" secondItem="ZOh-qM-8KQ" secondAttribute="bottom" id="uTt-xd-udt"/>
+                                                        <constraint firstItem="ZOh-qM-8KQ" firstAttribute="top" secondItem="KBk-J8-jH2" secondAttribute="top" id="vAW-HJ-HuS"/>
+                                                    </constraints>
+                                                </tableViewCellContentView>
+                                                <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                <connections>
+                                                    <outlet property="imageViewItemImage" destination="ZOh-qM-8KQ" id="TJH-J8-k4x"/>
+                                                    <outlet property="labelItemName" destination="fLZ-KH-d8D" id="HY0-tF-CDZ"/>
+                                                    <outlet property="labelSavings" destination="kpi-8N-hIl" id="zeD-Kf-wiS"/>
+                                                    <outlet property="viewBottomBorder" destination="gkl-UU-UX5" id="eye-E8-vQ6"/>
+                                                </connections>
+                                            </tableViewCell>
+                                        </prototypes>
+                                        <connections>
+                                            <outlet property="dataSource" destination="z0b-wY-CUw" id="WuX-K7-0UJ"/>
+                                            <outlet property="delegate" destination="z0b-wY-CUw" id="axp-7Q-kti"/>
+                                        </connections>
                                     </tableView>
                                 </subviews>
                             </stackView>
@@ -1048,6 +1130,7 @@
     </scenes>
     <resources>
         <image name="Accounts" width="26" height="26"/>
+        <image name="Awards" width="108" height="57"/>
         <image name="Back Arrow" width="72" height="72"/>
         <image name="Camera" width="31" height="31"/>
         <image name="Credit Card" width="72" height="72"/>

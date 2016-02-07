@@ -60,7 +60,7 @@ class StoreTableViewCell: BaseTableViewCell, UITableViewDataSource, UITableViewD
         if indexPath.row < 5 {
             if let storeCell  = tableView.dequeueReusableCellWithIdentifier("StoreItemCell", forIndexPath: indexPath) as? StoreItemTableViewCell {
                 let storeItem = store?.items?[indexPath.row]
-                storeCell.setCellContentForItem(indexPath, storeItem: storeItem)
+                storeCell.setCellContentForItem(indexPath, storeItem: storeItem, hideFifthDivider: true)
                 cell = storeCell
             }
         } else {

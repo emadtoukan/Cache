@@ -1,1 +1,91 @@
-[{"storeName":"Houseware","totalPotentialSaving":"$4-$7","kmAway":"2.3km", "items":[{"pictureName":"picture1","title":"Macintosh Apple","saving":"$0.27"},{"pictureName":"picture2","title":"Bananas","saving":"$0.65"},{"pictureName":"picture3","title":"Mezzetta Marinara","saving":"$1.50"},{"pictureName":"picture4","title":"Red Bell Pepper","saving":"$0.80"},{"pictureName":"picture5","title":"Minute Maid Orange Juice","saving":"$1.20"},{"pictureName":"picture6","title":"picture","saving":""},{"pictureName":"picture7","title":"picture","saving":""}]}]
+[{
+"storeName": "Walmart",
+"storePicture": "walmart",
+"totalPotentialSaving": "$12 - $16",
+"kmAway": "4.3km",
+"items": [{
+"pictureName": "bounty",
+"title": "Bounty Paper Towel",
+"saving": "$3.80"
+}, {
+"pictureName": "palmolive",
+"title": "Palmolive Dish Detergent",
+"saving": "$2.50"
+}, {
+"pictureName": "windex",
+"title": "Windex Window Cleaner",
+"saving": "$1.40"
+}, {
+"pictureName": "vim",
+"title": "Vim Bathroom Cleaner",
+"saving": "$2.20"
+}, {
+"pictureName": "garbagebag",
+"title": "Glad Garbage Bag",
+"saving": "$1.80"
+}, {
+"pictureName": "swiffer",
+"title": "Swiffer sweeper",
+"saving": "$1.90"
+}]
+}, {
+"storeName": "Canadian Tire",
+"storePicture": "canadiantire",
+"totalPotentialSaving": "$11 - $15",
+"kmAway": "4.3km",
+"items": [{
+"pictureName": "vim",
+"title": "Vim Bathroom Cleaner",
+"saving": "$2.00"
+}, {
+"pictureName": "swiffer",
+"title": "Swiffer sweeper",
+"saving": "$3.50"
+}, {
+"pictureName": "bounty",
+"title": "Bounty Paper Towel",
+"saving": "$1.80"
+}, {
+"pictureName": "windex",
+"title": "Windex Window Cleaner",
+"saving": "$3.40"
+}, {
+"pictureName": "palmolive",
+"title": "Palmolive Dish Detergent",
+"saving": "$2.50"
+}, {
+"pictureName": "glade",
+"title": "Glade Air Freshner",
+"saving": "$0.20"
+}]
+}, {
+"storeName": "Metro Inc.",
+"storePicture": "metro",
+"totalPotentialSaving": "$4 - $8",
+"kmAway": "4.3km",
+"items": [{
+"pictureName": "glade",
+"title": "Glade Air Freshner",
+"saving": "$1.00"
+}, {
+"pictureName": "swiffer",
+"title": "Swiffer sweeper",
+"saving": "$0.50"
+}, {
+"pictureName": "garbagebag",
+"title": "Glad Garbage Bag",
+"saving": "$2.80"
+}, {
+"pictureName": "windex",
+"title": "Windex Window Cleaner",
+"saving": "$2.40"
+}, {
+"pictureName": "vim",
+"title": "Vim Bathroom Cleaner",
+"saving": "$2.50"
+}, {
+"pictureName": "bounty",
+"title": "Bounty Paper Towel",
+"saving": "$0.80"
+}]
+}]

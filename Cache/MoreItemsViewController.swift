@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MoreItemsViewController: UIViewController {
+class MoreItemsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet var labelStoreNAme: UILabel!
     var store: Store?
@@ -23,14 +23,16 @@ class MoreItemsViewController: UIViewController {
         self.navigationController?.popViewControllerAnimated(true)
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    // MARK: - Table View Controller
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return store?.items?.count ?? 0
     }
-    */
-
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCellWithIdentifier("StoreItemCell", forIndexPath: indexPath) as? StoreItemTableViewCell else {
+            return UITableViewCell()
+        }
+        cell.setCellContentForItem(indexPath, storeItem: store?.items?[indexPath.row], hideFifthDivider: false)
+        return cell
+    }
 }

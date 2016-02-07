@@ -27,8 +27,11 @@ class StoreItemTableViewCell: BaseTableViewCell {
         // Configure the view for the selected state
     }
     
-    func setCellContentForItem(indexPath: NSIndexPath, storeItem: StoreItem?) {
-        viewBottomBorder.hidden = indexPath.row == 4 ? true : false
+    func setCellContentForItem(indexPath: NSIndexPath, storeItem: StoreItem?, hideFifthDivider: Bool) {
+        if hideFifthDivider {
+            viewBottomBorder.hidden = indexPath.row == 4 ? true : false
+        }
+        
         imageViewItemImage.image = UIImage(named: storeItem?.pictureName ?? "")
         labelItemName.text = storeItem?.title
         labelSavings.text = storeItem?.potentialSavings

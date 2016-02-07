@@ -25,7 +25,7 @@ class Transactions {
                     tempTransaction.append(Transaction(json: transactionJSON))
                 }
             } catch {
-                print("Something went wrong")
+                print("Something went wrong with the transactions")
             }
         }
         
