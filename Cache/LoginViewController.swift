@@ -39,7 +39,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         self.view.endEditing(true)
         SVProgressHUD.showWithStatus("Loging In")
         
-        let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(0 * Double(NSEC_PER_SEC)))
+        let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(2 * Double(NSEC_PER_SEC)))
         dispatch_after(delayTime, dispatch_get_main_queue()) {
             SVProgressHUD.dismiss()
             self.performSegueWithIdentifier("showMainView", sender: nil)

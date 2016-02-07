@@ -38,27 +38,57 @@ class AccountViewController: UIViewController, UITableViewDelegate, UITableViewD
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return 3
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCellWithIdentifier("AccountCell", forIndexPath: indexPath) as? AccountsTableViewCell else {
-            return UITableViewCell()
+        
+        var cell = UITableViewCell()
+        
+        if indexPath.section == 0 {
+            switch indexPath.row {
+            case 0:
+                if let tempCell = tableView.dequeueReusableCellWithIdentifier("CellHeader", forIndexPath: indexPath) as? AccountHeaderTableViewCell {
+                    tempCell.labelName.text = "BANKING"
+                    cell = tempCell
+                }
+            case 1:
+                if let tempCell = tableView.dequeueReusableCellWithIdentifier("AccountCell", forIndexPath: indexPath) as? AccountsTableViewCell {
+                    cell = tempCell
+                }
+            case 2:
+                if let tempCell = tableView.dequeueReusableCellWithIdentifier("AccountCell", forIndexPath: indexPath) as? AccountsTableViewCell {
+                    cell = tempCell
+                }
+            default:
+                break
+            }
+        } else {
+            switch indexPath.row {
+            case 0:
+                if let tempCell = tableView.dequeueReusableCellWithIdentifier("CellHeader", forIndexPath: indexPath) as? AccountHeaderTableViewCell {
+                    tempCell.labelName.text = "BORROWING"
+                    cell = tempCell
+                }
+            case 1:
+                if let tempCell = tableView.dequeueReusableCellWithIdentifier("AccountCell", forIndexPath: indexPath) as? AccountsTableViewCell {
+                    cell = tempCell
+                }
+            case 2:
+                if let tempCell = tableView.dequeueReusableCellWithIdentifier("AccountCell", forIndexPath: indexPath) as? AccountsTableViewCell {
+                    cell = tempCell
+                }
+            default:
+                break
+            }
         }
+    
         
         return cell
         
     }
     
-    func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        guard let cell = tableView.dequeueReusableCellWithIdentifier("CellHeader") as? AccountHeaderTableViewCell else {
-            return UIView()
-        }
-        
-        cell.labelName.text = section == 0 ? "BANKING" : "BORROWING"
-        return cell.contentView
-        
-    }
+
 
 
 }
