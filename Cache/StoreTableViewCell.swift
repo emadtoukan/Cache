@@ -19,6 +19,7 @@ class StoreTableViewCell: BaseTableViewCell, UITableViewDataSource, UITableViewD
     @IBOutlet var labelDistanceAway: UILabel!
     @IBOutlet var labelSavings: UILabel!
     @IBOutlet var labelPotentialSavings: UILabel!
+    weak var mainViewcontroller: MainViewController?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -35,13 +36,17 @@ class StoreTableViewCell: BaseTableViewCell, UITableViewDataSource, UITableViewD
         // Configure the view for the selected state
     }
     
-    func setCellContent(displayDetails: Bool, store: Store?) {
+    func setCellContent(displayDetails: Bool, store: Store?, mainViewcontroller: MainViewController) {
         self.store = store
+        self.mainViewcontroller = mainViewcontroller
         tableViewInternal.hidden = !displayDetails
         imageViewStoreImage.image = UIImage(named: store?.pictureName ?? "")
         labelStoreName.text = store?.name
         labelDistanceAway.text = store?.distanceAway
         labelSavings.text = store?.potentialSavings
+        tableViewInternal.reloadData()
+        
+    
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -59,7 +64,11 @@ class StoreTableViewCell: BaseTableViewCell, UITableViewDataSource, UITableViewD
                 cell = storeCell
             }
         } else {
-            cell = tableView.dequeueReusableCellWithIdentifier("MoreCell", forIndexPath: indexPath)
+            if let moreCell = tableView.dequeueReusableCellWithIdentifier("MoreCell", forIndexPath: indexPath) as? StoreMoreTableViewCell {
+                moreCell.delegate = mainViewcontroller
+                moreCell.store = store
+                cell = moreCell
+            }
         }
         
         return cell ?? UITableViewCell()

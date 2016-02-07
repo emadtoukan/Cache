@@ -18,7 +18,7 @@ class StoreItemTableViewCell: BaseTableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        imageViewItemImage.layer.cornerRadius = self.imageViewItemImage.frame.size.width / 2
+//        imageViewItemImage.layer.cornerRadius = self.imageViewItemImage.frame.size.width / 2
     }
 
     override func setSelected(selected: Bool, animated: Bool) {
@@ -32,6 +32,7 @@ class StoreItemTableViewCell: BaseTableViewCell {
         imageViewItemImage.image = UIImage(named: storeItem?.pictureName ?? "")
         labelItemName.text = storeItem?.title
         labelSavings.text = storeItem?.potentialSavings
+        
     }
 
 }

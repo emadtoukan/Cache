@@ -10,6 +10,9 @@ import UIKit
 
 class StoreMoreTableViewCell: BaseTableViewCell {
 
+    weak var delegate: MainViewController?
+    var store: Store?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -23,5 +26,6 @@ class StoreMoreTableViewCell: BaseTableViewCell {
 
     @IBAction func moreButtonPressed(sender: AnyObject) {
         print("Button more pressed")
+        delegate?.showMoreStoreItems(store!)
     }
 }

@@ -26,6 +26,6 @@ import Foundation
             tempItems.append(StoreItem(json: storeItem))
         }
         items = tempItems
-        pictureName = json[""] as? String
+        pictureName = json["storePicture"] as? String
     }
  }

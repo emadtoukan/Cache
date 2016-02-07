@@ -1,1 +1,148 @@
-[{"storeName":"METRO Inc.","totalPotentialSaving":"$4-$7","kmAway":"2.3km", "items":[{"pictureName":"picture1","title":"Macintosh Apple","saving":"$0.27"},{"pictureName":"picture2","title":"Bananas","saving":"$0.65"},{"pictureName":"picture3","title":"Mezzetta Marinara","saving":"$1.50"},{"pictureName":"picture4","title":"Red Bell Pepper","saving":"$0.80"},{"pictureName":"picture5","title":"Minute Maid Orange Juice","saving":"$1.20"},{"pictureName":"picture6","title":"picture","saving":""},{"pictureName":"picture7","title":"picture","saving":""} ]}, {"storeName":"METRO Inc.","totalPotentialSaving":"$4-$7","kmAway":"2.3km", "items":[{"pictureName":"picture1","title":"Macintosh Apple","saving":"$0.27"},{"pictureName":"picture2","title":"Bananas","saving":"$0.65"},{"pictureName":"picture3","title":"Mezzetta Marinara","saving":"$1.50"},{"pictureName":"picture4","title":"Red Bell Pepper","saving":"$0.80"},{"pictureName":"picture5","title":"Minute Maid Orange Juice","saving":"$1.20"},{"pictureName":"picture6","title":"picture","saving":""},{"pictureName":"picture7","title":"picture","saving":""} ]}]
+[{
+"storeName": "Metro Inc. Store#132",
+"storePicture": "metro",
+"totalPotentialSaving": "$8 - $12",
+"kmAway": "3.3km",
+"items": [{
+"pictureName": "cream",
+"title": "Neilson Whipping Cream",
+"saving": "$1.80"
+}, {
+"pictureName": "cheese",
+"title": "Black Diamond Cheese",
+"saving": "$1.50"
+}, {
+"pictureName": "coke",
+"title": "Coca-Cola 2L",
+"saving": "$1.00"
+}, {
+"pictureName": "icecream",
+"title": "Breyers Ice Cream Chocolate",
+"saving": "$2.00"
+}, {
+"pictureName": "bananas",
+"title": "Bananas",
+"saving": "$1.50"
+}, {
+"pictureName": "sauce",
+"title": "Mezzetta Marinara",
+"saving": "$1.50"
+}, {
+"pictureName": "pepper",
+"title": "Red Bell Pepper",
+"saving": "$1.00"
+}, {
+"pictureName": "cucumber",
+"title": "Cucumbers",
+"saving": "1.10"
+}]
+}, {
+"storeName": "NO FRILLS",
+"storePicture": "nofrills",
+"totalPotentialSaving": "$6 - $10",
+"kmAway": "4.1km",
+"items": [{
+"pictureName": "apple",
+"title": "Macintosh Apples",
+"saving": "$1.27"
+}, {
+"pictureName": "bananas",
+"title": "Bananas",
+"saving": "$1.65"
+}, {
+"pictureName": "sauce",
+"title": "Mezzetta Marinara",
+"saving": "$1.50"
+}, {
+"pictureName": "pepper",
+"title": "Red Bell Pepper",
+"saving": "$0.80"
+}, {
+"pictureName": "cream",
+"title": "Neilson Whipping Cream",
+"saving": "$1.20"
+}, {
+"pictureName": "cucumber",
+"title": "Cucumbers",
+"saving": "$1.10"
+}, {
+"pictureName": "icecream",
+"title": "Breyers Ice Cream",
+"saving": "$0.50"
+}]
+},
+
+{
+"storeName": "Highland Farms #80",
+"storePicture": "highland",
+"totalPotentialSaving": "$6 - $10",
+"kmAway": "0.5km",
+"items": [{
+"pictureName": "almondmilk",
+"title": "Silk Almond Milk",
+"saving": "$2.00"
+}, {
+"pictureName": "bananas",
+"title": "Bananas",
+"saving": "$0.65"
+}, {
+"pictureName": "sauce",
+"title": "Mezzetta Marinara",
+"saving": "$1.50"
+}, {
+"pictureName": "pepper",
+"title": "Red Bell Pepper",
+"saving": "$0.80"
+}, {
+"pictureName": "cucumber",
+"title": "Cucumbers",
+"saving": "$1.10"
+}, {
+"pictureName": "cream",
+"title": "Neilson Whipping Cream",
+"saving": "$1.20"
+}, {
+"pictureName": "icecream",
+"title": "Breyers Ice Cream",
+"saving": "$0.75"
+}, {
+"pictureName": "coke",
+"title": "Coca-Cola 2L",
+"saving": "$0.50"
+}]
+}, {
+"storeName": "Loblaws Inc.",
+"storePicture": "loblaws",
+"totalPotentialSaving": "$5 - $9",
+"kmAway": "1.1km",
+"items": [{
+"pictureName": "harvestcrunch",
+"title": "Harvest Crunch Fmly",
+"saving": "$1.50"
+}, {
+"pictureName": "icecream",
+"title": "Breyers Ice Cream",
+"saving": "$1.50"
+}, {
+"pictureName": "cucumber",
+"title": "Cucumbers",
+"saving": "$1.60"
+}, {
+"pictureName": "apple",
+"title": "Macintosh Apples",
+"saving": "$0.50"
+}, {
+"pictureName": "pepper",
+"title": "Red Bell Pepper",
+"saving": "$0.90"
+}, {
+"pictureName": "cream",
+"title": "Neilson Whipping Cream",
+"saving": "$1.20"
+}, {
+"pictureName": "coke",
+"title": "Coca-Cola 2L",
+"saving": "$0.50"
+}]
+}
+]

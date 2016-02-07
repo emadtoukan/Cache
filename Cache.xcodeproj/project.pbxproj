@@ -23,7 +23,6 @@
 		DDA6DDBF1C6698C400752541 /* Houseware in Resources */ = {isa = PBXBuildFile; fileRef = DDA6DDBE1C6698C400752541 /* Houseware */; };
 		DDA6DDC11C6698D500752541 /* PersonalCare in Resources */ = {isa = PBXBuildFile; fileRef = DDA6DDC01C6698D500752541 /* PersonalCare */; };
 		DDA6DDC31C6698DD00752541 /* Fuel in Resources */ = {isa = PBXBuildFile; fileRef = DDA6DDC21C6698DD00752541 /* Fuel */; };
-		DDA6DDC51C6698E600752541 /* Bills in Resources */ = {isa = PBXBuildFile; fileRef = DDA6DDC41C6698E600752541 /* Bills */; };
 		DDA6DDC71C6698ED00752541 /* Utilities in Resources */ = {isa = PBXBuildFile; fileRef = DDA6DDC61C6698ED00752541 /* Utilities */; };
 		DDA6DDCB1C66E63300752541 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA6DDCA1C66E63300752541 /* CameraViewController.swift */; };
 		DDA6DDCD1C66F8EB00752541 /* TransactionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA6DDCC1C66F8EB00752541 /* TransactionsViewController.swift */; };
@@ -37,6 +36,7 @@
 		DDB53DB61C656A7C00832669 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDB53DB41C656A7C00832669 /* LaunchScreen.storyboard */; };
 		DDB53DC11C656A7C00832669 /* CacheTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB53DC01C656A7C00832669 /* CacheTests.swift */; };
 		DDB53DCC1C656A7C00832669 /* CacheUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB53DCB1C656A7C00832669 /* CacheUITests.swift */; };
+		DDBC919C1C672AD60098F782 /* MoreItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBC919B1C672AD60098F782 /* MoreItemsViewController.swift */; };
 		DDCF0E621C66466700AE9452 /* StoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCF0E611C66466700AE9452 /* StoreTableViewCell.swift */; };
 		DDCF0E641C66584A00AE9452 /* StoreItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCF0E631C66584A00AE9452 /* StoreItemTableViewCell.swift */; };
 		DDCF0E661C66586100AE9452 /* StoreMoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCF0E651C66586100AE9452 /* StoreMoreTableViewCell.swift */; };
@@ -80,7 +80,6 @@
 		DDA6DDBE1C6698C400752541 /* Houseware */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Houseware; sourceTree = "<group>"; };
 		DDA6DDC01C6698D500752541 /* PersonalCare */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PersonalCare; sourceTree = "<group>"; };
 		DDA6DDC21C6698DD00752541 /* Fuel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Fuel; sourceTree = "<group>"; };
-		DDA6DDC41C6698E600752541 /* Bills */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Bills; sourceTree = "<group>"; };
 		DDA6DDC61C6698ED00752541 /* Utilities */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Utilities; sourceTree = "<group>"; };
 		DDA6DDCA1C66E63300752541 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		DDA6DDCC1C66F8EB00752541 /* TransactionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionsViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +100,7 @@
 		DDB53DCB1C656A7C00832669 /* CacheUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheUITests.swift; sourceTree = "<group>"; };
 		DDB53DCD1C656A7C00832669 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DDB53DD91C657C5C00832669 /* Cache-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Cache-Bridging-Header.h"; sourceTree = "<group>"; };
+		DDBC919B1C672AD60098F782 /* MoreItemsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreItemsViewController.swift; sourceTree = "<group>"; };
 		DDCF0E611C66466700AE9452 /* StoreTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreTableViewCell.swift; sourceTree = "<group>"; };
 		DDCF0E631C66584A00AE9452 /* StoreItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreItemTableViewCell.swift; sourceTree = "<group>"; };
 		DDCF0E651C66586100AE9452 /* StoreMoreTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreMoreTableViewCell.swift; sourceTree = "<group>"; };
@@ -169,7 +169,6 @@
 				DDA6DDBE1C6698C400752541 /* Houseware */,
 				DDA6DDC01C6698D500752541 /* PersonalCare */,
 				DDA6DDC21C6698DD00752541 /* Fuel */,
-				DDA6DDC41C6698E600752541 /* Bills */,
 				DDA6DDC61C6698ED00752541 /* Utilities */,
 			);
 			name = Store;
@@ -193,6 +192,7 @@
 				DDCF0E611C66466700AE9452 /* StoreTableViewCell.swift */,
 				DDCF0E631C66584A00AE9452 /* StoreItemTableViewCell.swift */,
 				DDCF0E651C66586100AE9452 /* StoreMoreTableViewCell.swift */,
+				DDBC919B1C672AD60098F782 /* MoreItemsViewController.swift */,
 			);
 			name = Main;
 			sourceTree = "<group>";
@@ -392,7 +392,6 @@
 				DDB53DB31C656A7C00832669 /* Assets.xcassets in Resources */,
 				DDA6DDC71C6698ED00752541 /* Utilities in Resources */,
 				DDA6DDC31C6698DD00752541 /* Fuel in Resources */,
-				DDA6DDC51C6698E600752541 /* Bills in Resources */,
 				DDA6DDD61C6709FD00752541 /* Transactions in Resources */,
 				DDB53DB11C656A7C00832669 /* Main.storyboard in Resources */,
 				DD88C5B31C65B948009CC4D1 /* Lato2OFL in Resources */,
@@ -472,6 +471,7 @@
 				DDCF0E641C66584A00AE9452 /* StoreItemTableViewCell.swift in Sources */,
 				DDCF0E661C66586100AE9452 /* StoreMoreTableViewCell.swift in Sources */,
 				DD88C5BB1C65C067009CC4D1 /* LoginViewController.swift in Sources */,
+				DDBC919C1C672AD60098F782 /* MoreItemsViewController.swift in Sources */,
 				DD88C5C11C65DAE4009CC4D1 /* Util.swift in Sources */,
 				DDCF0E681C66587300AE9452 /* BaseTableViewCell.swift in Sources */,
 				DDA6DDCD1C66F8EB00752541 /* TransactionsViewController.swift in Sources */,

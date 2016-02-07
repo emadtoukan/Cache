@@ -10,7 +10,7 @@ import UIKit
 import PNChart
 
 enum Categories: String {
-    case Grocery, Houseware, PersonalCare, Fuel, Bills, Utilities
+    case Grocery, Houseware, PersonalCare, Fuel, Utilities
 }
 
 class MainViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
@@ -22,7 +22,6 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBOutlet var buttonHouseWare: UIButton!
     @IBOutlet var buttonPharmaceutical: UIButton!
     @IBOutlet var buttonFuel: UIButton!
-    @IBOutlet var buttonBills: UIButton!
     @IBOutlet var buttonUtilities: UIButton!
     @IBOutlet var imageViewBlurred: UIImageView!
     @IBOutlet var viewCircleContainerView: UIView!
@@ -52,7 +51,6 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         buttonHouseWare.alpha = 0.3
         buttonPharmaceutical.alpha = 0.3
         buttonFuel.alpha = 0.3
-        buttonBills.alpha = 0.3
         buttonUtilities.alpha = 0.3
         
         
@@ -77,6 +75,15 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         }
     }
     
+    // MARK: - Navigation
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "showStoreItems" {
+            if let vc = segue.destinationViewController as? MoreItemsViewController, store = sender as? Store {
+                vc.store = store
+            }
+        }
+    }
+    
     // MARK: - Instance Methods
     
     @IBAction func categoryButtonPressed(sender: UIButton) {
@@ -85,7 +92,6 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         buttonHouseWare.alpha = 0.3
         buttonPharmaceutical.alpha = 0.3
         buttonFuel.alpha = 0.3
-        buttonBills.alpha = 0.3
         buttonUtilities.alpha = 0.3
         
         switch sender {
@@ -101,9 +107,6 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         case buttonFuel:
             selectedCategory = .Fuel
             buttonFuel.alpha = 1
-        case buttonBills:
-            selectedCategory = .Bills
-            buttonBills.alpha = 1
         case buttonUtilities:
             selectedCategory = .Utilities
             buttonUtilities.alpha = 1
@@ -112,7 +115,9 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         }
     }
     
-    
+    func showMoreStoreItems(store: Store) {
+        self.performSegueWithIdentifier("showStoreItems", sender: store)
+    }
     // MARK: - Table View Delegate Methods
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return storeSavings.stores?.count ?? 0
@@ -124,7 +129,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         }
         
         let store = storeSavings.stores?[indexPath.row]
-        cell.setCellContent(indexPath == selectedIndexPath, store: store)
+        cell.setCellContent(indexPath == selectedIndexPath, store: store, mainViewcontroller: self)
         return cell
     }
     
