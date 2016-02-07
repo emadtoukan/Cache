@@ -61,36 +61,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     // MARK: - Registering for notifications
     func setupNotifications(application: UIApplication, launchOptions: [NSObject: AnyObject]?) {
-        // Soccer Actions and Category
-        let soccerInAction = UIMutableUserNotificationAction()
-        soccerInAction.identifier = "SOCCER_IN_ACTION_IDENTIFIER"
-        soccerInAction.title = "👍"
-        soccerInAction.activationMode = UIUserNotificationActivationMode.Background
-        soccerInAction.destructive = false
-        soccerInAction.authenticationRequired = false
+        // Camera Action
+        let cameraAction = UIMutableUserNotificationAction()
+        cameraAction.identifier = "CAMERA_ACTION_IDENTIFIER"
+        cameraAction.title = "📷"
+        cameraAction.activationMode = UIUserNotificationActivationMode.Background
+        cameraAction.destructive = false
+        cameraAction.authenticationRequired = false
         
-        let soccerOutAction = UIMutableUserNotificationAction()
-        soccerOutAction.identifier = "SOCCER_OUT_ACTION_IDENTIFIER"
-        soccerOutAction.title = "👎"
-        soccerOutAction.activationMode = UIUserNotificationActivationMode.Background
-        soccerOutAction.destructive = true
-        soccerOutAction.authenticationRequired = false
-        
-        let soccerMaybeAction = UIMutableUserNotificationAction()
-        soccerMaybeAction.identifier = "SOCCER_MAYBE_ACTION_IDENTIFIER"
-        soccerMaybeAction.title = "✊"
-        soccerMaybeAction.activationMode = UIUserNotificationActivationMode.Background
-        soccerMaybeAction.destructive = false
-        soccerMaybeAction.authenticationRequired = false
-        
-        let soccerCategory = UIMutableUserNotificationCategory()
-        soccerCategory.identifier = "SOCCER_NOTIFICATION_IDENTIFIER"
-        soccerCategory.setActions([soccerInAction, soccerMaybeAction,soccerOutAction], forContext: UIUserNotificationActionContext.Default)
-        soccerCategory.setActions([soccerInAction, soccerOutAction], forContext: UIUserNotificationActionContext.Minimal)
+        let cameraCategory = UIMutableUserNotificationCategory()
+        cameraCategory.identifier = "CAMERA_NOTIFICATION_IDENTIFIER"
+        cameraCategory.setActions([cameraAction], forContext: UIUserNotificationActionContext.Default)
         
         // This will register the app for receiving notifications and will prompt the user to accept the notifications
         // We pass the list of categories to the settings
-        let notificationSettings = UIUserNotificationSettings(forTypes: [.Alert, .Badge, .Sound], categories: [soccerCategory])
+        let notificationSettings = UIUserNotificationSettings(forTypes: [.Alert, .Badge, .Sound], categories: [cameraCategory])
         application.registerUserNotificationSettings(notificationSettings)
         
         // Register the app for remote notifications
@@ -145,15 +130,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         if let uIdentifier = identifier {
             switch uIdentifier{
-            case "REPLY_ACTION_IDENTIFIER":
-                let text = responseInfo[UIUserNotificationActionResponseTypedTextKey]
-                print("REPLY_ACTION_IDENTIFIER with text: \(text)")
-            case "CANCEL_ACTION_IDENTIFIER":
-                print("CANCEL_ACTION_IDENTIFIER")
-            case "SOCCER_IN_ACTION_IDENTIFIER":
-                print("SOCCER_IN_ACTION_IDENTIFIER")
-            case "SOCCER_OUT_ACTION_IDENTIFIER":
-                print("SOCCER_OUT_ACTION_IDENTIFIER")
+            case "CAMERA_ACTION_IDENTIFIER":
+//                let something
+                break
             default:
                 print("Some action was pressed")
             }

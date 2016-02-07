@@ -1,1 +1,80 @@
-[{"storeName":"Fuel","totalPotentialSaving":"$4-$7","kmAway":"2.3km", "items":[{"pictureName":"picture1","title":"Macintosh Apple","saving":"$0.27"},{"pictureName":"picture2","title":"Bananas","saving":"$0.65"},{"pictureName":"picture3","title":"Mezzetta Marinara","saving":"$1.50"},{"pictureName":"picture4","title":"Red Bell Pepper","saving":"$0.80"},{"pictureName":"picture5","title":"Minute Maid Orange Juice","saving":"$1.20"},{"pictureName":"picture6","title":"picture","saving":""},{"pictureName":"picture7","title":"picture","saving":""}]}]
+[{
+"storeName": "Petro Canada #22",
+"storePicture": "petro",
+"totalPotentialSaving": "$2.50",
+"kmAway": "3.3km",
+"items": [{
+"pictureName": "",
+"title": "Superclean 87",
+"saving": "$2.50"
+}, {
+"pictureName": "",
+"title": "Superclean 89 ",
+"saving": "$2.43"
+}, {
+"pictureName": "",
+"title": "Superclean 91",
+"saving": "$2.20"
+}, {
+"pictureName": "",
+"title": "Ultra 94",
+"saving": "$0.50"
+}, {
+"pictureName": "",
+"title": "Car Wash",
+"saving": "$1.60"
+}]
+}, {
+"storeName": "Husky #98",
+"storePicture": "husky",
+"totalPotentialSaving": "$2.45",
+"kmAway": "0.6km",
+"items": [{
+"pictureName": "",
+"title": "87 Octane",
+"saving": "$2.45"
+}, {
+"pictureName": "",
+"title": "89 Octane",
+"saving": "$2.10"
+}, {
+"pictureName": "",
+"title": "91 Octane",
+"saving": "$2.00"
+}, {
+"pictureName": "",
+"title": "Diesel",
+"saving": "$1.10"
+},{
+"pictureName": "",
+"title": "Touchless Car",
+"saving": "$2.00"
+}]
+}, {
+"storeName": "Esso #62",
+"storePicture": "esso",
+"totalPotentialSaving": "$1.40",
+"kmAway": "3.3km",
+"items": [{
+"pictureName": "",
+"title": "Superclean 87",
+"saving": "$1.40"
+}, {
+"pictureName": "",
+"title": "Superclean 89 ",
+"saving": "$1.21"
+}, {
+"pictureName": "",
+"title": "Superclean 91",
+"saving": "$1.10"
+}, {
+"pictureName": "",
+"title": "Diesel",
+"saving": "$1.00"
+}, {
+"pictureName": "",
+"title": "Car Wash",
+"saving": "$1.50"
+}]
+}
+]
