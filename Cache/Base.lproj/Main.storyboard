@@ -1206,7 +1206,7 @@
                                                         <constraint firstAttribute="height" constant="35" id="WSl-3p-0Il"/>
                                                     </constraints>
                                                 </imageView>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Pasted image at 2016_02_07 01_41 PM" translatesAutoresizingMaskIntoConstraints="NO" id="nAg-Ug-47t">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Pasted image at 2016_02_07 01_41 PM" translatesAutoresizingMaskIntoConstraints="NO" id="nAg-Ug-47t">
                                                     <rect key="frame" x="70" y="78" width="35" height="35"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="35" id="ajt-Xz-0gJ"/>
@@ -1235,7 +1235,7 @@
                                                 <constraint firstItem="nAg-Ug-47t" firstAttribute="top" secondItem="Hf4-jN-glh" secondAttribute="top" id="I0S-1Q-XF1"/>
                                                 <constraint firstItem="Hf4-jN-glh" firstAttribute="leading" secondItem="maD-43-xLk" secondAttribute="leading" id="ILu-K1-tvn"/>
                                                 <constraint firstItem="mJk-Ou-to1" firstAttribute="trailing" secondItem="Yms-9n-l6e" secondAttribute="trailing" id="J1T-zK-4BH"/>
-                                                <constraint firstItem="nAg-Ug-47t" firstAttribute="leading" secondItem="Hf4-jN-glh" secondAttribute="trailing" constant="-15" id="ONm-gl-Nr1"/>
+                                                <constraint firstItem="nAg-Ug-47t" firstAttribute="leading" secondItem="Hf4-jN-glh" secondAttribute="trailing" constant="10" id="ONm-gl-Nr1"/>
                                                 <constraint firstItem="K07-Og-fR2" firstAttribute="bottom" secondItem="VMq-Vr-9yU" secondAttribute="bottom" id="Und-Yj-W7u"/>
                                                 <constraint firstItem="miQ-bC-Edy" firstAttribute="top" secondItem="VMq-Vr-9yU" secondAttribute="top" id="X9g-fo-5b5"/>
                                                 <constraint firstAttribute="bottom" secondItem="7Gt-0u-PfU" secondAttribute="bottom" id="XM7-0i-3R1"/>

@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		BC275AB10EBBDA2B69A856EF /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7913E3826B66AB67280412CC /* Pods.framework */; };
+		DD1BE7F91C67CD9E00E4A0BB /* ClanOT-Black.otf in Sources */ = {isa = PBXBuildFile; fileRef = DD1BE7F21C67CD9D00E4A0BB /* ClanOT-Black.otf */; };
+		DD1BE7FA1C67CD9E00E4A0BB /* ClanOT-Bold.otf in Sources */ = {isa = PBXBuildFile; fileRef = DD1BE7F31C67CD9D00E4A0BB /* ClanOT-Bold.otf */; };
+		DD1BE7FB1C67CD9E00E4A0BB /* ClanOT-Book.otf in Sources */ = {isa = PBXBuildFile; fileRef = DD1BE7F41C67CD9E00E4A0BB /* ClanOT-Book.otf */; };
+		DD1BE7FC1C67CD9E00E4A0BB /* ClanOT-Medium.otf in Sources */ = {isa = PBXBuildFile; fileRef = DD1BE7F51C67CD9E00E4A0BB /* ClanOT-Medium.otf */; };
+		DD1BE7FD1C67CD9E00E4A0BB /* ClanOT-News.otf in Sources */ = {isa = PBXBuildFile; fileRef = DD1BE7F61C67CD9E00E4A0BB /* ClanOT-News.otf */; };
+		DD1BE7FE1C67CD9E00E4A0BB /* ClanOT-Thin.otf in Sources */ = {isa = PBXBuildFile; fileRef = DD1BE7F71C67CD9E00E4A0BB /* ClanOT-Thin.otf */; };
+		DD1BE7FF1C67CD9E00E4A0BB /* ClanOT-Ultra.otf in Sources */ = {isa = PBXBuildFile; fileRef = DD1BE7F81C67CD9E00E4A0BB /* ClanOT-Ultra.otf */; };
 		DD88C5B11C65B580009CC4D1 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD88C5B01C65B580009CC4D1 /* InitialViewController.swift */; };
 		DD88C5B31C65B948009CC4D1 /* Lato2OFL in Resources */ = {isa = PBXBuildFile; fileRef = DD88C5B21C65B948009CC4D1 /* Lato2OFL */; };
 		DD88C5B51C65BC50009CC4D1 /* ClanOT in Resources */ = {isa = PBXBuildFile; fileRef = DD88C5B41C65BC50009CC4D1 /* ClanOT */; };
@@ -40,7 +47,6 @@
 		DDBC919E1C6750AB0098F782 /* CacheItActionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBC919D1C6750AB0098F782 /* CacheItActionsViewController.swift */; };
 		DDBC91A01C679D030098F782 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBC919F1C679D030098F782 /* AccountViewController.swift */; };
 		DDBC91A21C67A2E50098F782 /* AccountsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBC91A11C67A2E50098F782 /* AccountsTableViewCell.swift */; };
-		DDBC91A31C67A45C0098F782 /* ClanOT in Sources */ = {isa = PBXBuildFile; fileRef = DD88C5B41C65BC50009CC4D1 /* ClanOT */; };
 		DDBC91A51C67A7300098F782 /* AccountHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBC91A41C67A7300098F782 /* AccountHeaderTableViewCell.swift */; };
 		DDCF0E621C66466700AE9452 /* StoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCF0E611C66466700AE9452 /* StoreTableViewCell.swift */; };
 		DDCF0E641C66584A00AE9452 /* StoreItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCF0E631C66584A00AE9452 /* StoreItemTableViewCell.swift */; };
@@ -69,6 +75,13 @@
 		22019A9A6A4FD2693E89E8E7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		7913E3826B66AB67280412CC /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9D38DABB97F21DF33E7AF43 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		DD1BE7F21C67CD9D00E4A0BB /* ClanOT-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "ClanOT-Black.otf"; path = "Cache/ClanOT/ClanOT-Black.otf"; sourceTree = "<group>"; };
+		DD1BE7F31C67CD9D00E4A0BB /* ClanOT-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "ClanOT-Bold.otf"; path = "Cache/ClanOT/ClanOT-Bold.otf"; sourceTree = "<group>"; };
+		DD1BE7F41C67CD9E00E4A0BB /* ClanOT-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "ClanOT-Book.otf"; path = "Cache/ClanOT/ClanOT-Book.otf"; sourceTree = "<group>"; };
+		DD1BE7F51C67CD9E00E4A0BB /* ClanOT-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "ClanOT-Medium.otf"; path = "Cache/ClanOT/ClanOT-Medium.otf"; sourceTree = "<group>"; };
+		DD1BE7F61C67CD9E00E4A0BB /* ClanOT-News.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "ClanOT-News.otf"; path = "Cache/ClanOT/ClanOT-News.otf"; sourceTree = "<group>"; };
+		DD1BE7F71C67CD9E00E4A0BB /* ClanOT-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "ClanOT-Thin.otf"; path = "Cache/ClanOT/ClanOT-Thin.otf"; sourceTree = "<group>"; };
+		DD1BE7F81C67CD9E00E4A0BB /* ClanOT-Ultra.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "ClanOT-Ultra.otf"; path = "Cache/ClanOT/ClanOT-Ultra.otf"; sourceTree = "<group>"; };
 		DD88C5B01C65B580009CC4D1 /* InitialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		DD88C5B21C65B948009CC4D1 /* Lato2OFL */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Lato2OFL; sourceTree = "<group>"; };
 		DD88C5B41C65BC50009CC4D1 /* ClanOT */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ClanOT; sourceTree = "<group>"; };
@@ -220,6 +233,13 @@
 		DDB53D9F1C656A7C00832669 = {
 			isa = PBXGroup;
 			children = (
+				DD1BE7F21C67CD9D00E4A0BB /* ClanOT-Black.otf */,
+				DD1BE7F31C67CD9D00E4A0BB /* ClanOT-Bold.otf */,
+				DD1BE7F41C67CD9E00E4A0BB /* ClanOT-Book.otf */,
+				DD1BE7F51C67CD9E00E4A0BB /* ClanOT-Medium.otf */,
+				DD1BE7F61C67CD9E00E4A0BB /* ClanOT-News.otf */,
+				DD1BE7F71C67CD9E00E4A0BB /* ClanOT-Thin.otf */,
+				DD1BE7F81C67CD9E00E4A0BB /* ClanOT-Ultra.otf */,
 				DDB53DAA1C656A7C00832669 /* Cache */,
 				DDB53DBF1C656A7C00832669 /* CacheTests */,
 				DDB53DCA1C656A7C00832669 /* CacheUITests */,
@@ -480,7 +500,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDBC91A31C67A45C0098F782 /* ClanOT in Sources */,
+				DD1BE7F91C67CD9E00E4A0BB /* ClanOT-Black.otf in Sources */,
+				DD1BE7FA1C67CD9E00E4A0BB /* ClanOT-Bold.otf in Sources */,
+				DD1BE7FB1C67CD9E00E4A0BB /* ClanOT-Book.otf in Sources */,
+				DD1BE7FC1C67CD9E00E4A0BB /* ClanOT-Medium.otf in Sources */,
+				DD1BE7FD1C67CD9E00E4A0BB /* ClanOT-News.otf in Sources */,
+				DD1BE7FE1C67CD9E00E4A0BB /* ClanOT-Thin.otf in Sources */,
+				DD1BE7FF1C67CD9E00E4A0BB /* ClanOT-Ultra.otf in Sources */,
 				DD88C5C31C663CC1009CC4D1 /* MainViewController.swift in Sources */,
 				DDCF0E641C66584A00AE9452 /* StoreItemTableViewCell.swift in Sources */,
 				DDCF0E661C66586100AE9452 /* StoreMoreTableViewCell.swift in Sources */,
