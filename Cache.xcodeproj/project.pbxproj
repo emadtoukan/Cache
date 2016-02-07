@@ -21,10 +21,16 @@
 		DDA6DDBB1C6685C600752541 /* Grocery in Resources */ = {isa = PBXBuildFile; fileRef = DDA6DDBA1C6685C600752541 /* Grocery */; };
 		DDA6DDBD1C668AC600752541 /* StoreSavings.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA6DDBC1C668AC600752541 /* StoreSavings.swift */; };
 		DDA6DDBF1C6698C400752541 /* Houseware in Resources */ = {isa = PBXBuildFile; fileRef = DDA6DDBE1C6698C400752541 /* Houseware */; };
-		DDA6DDC11C6698D500752541 /* Pharmaceutical in Resources */ = {isa = PBXBuildFile; fileRef = DDA6DDC01C6698D500752541 /* Pharmaceutical */; };
+		DDA6DDC11C6698D500752541 /* PersonalCare in Resources */ = {isa = PBXBuildFile; fileRef = DDA6DDC01C6698D500752541 /* PersonalCare */; };
 		DDA6DDC31C6698DD00752541 /* Fuel in Resources */ = {isa = PBXBuildFile; fileRef = DDA6DDC21C6698DD00752541 /* Fuel */; };
 		DDA6DDC51C6698E600752541 /* Bills in Resources */ = {isa = PBXBuildFile; fileRef = DDA6DDC41C6698E600752541 /* Bills */; };
 		DDA6DDC71C6698ED00752541 /* Utilities in Resources */ = {isa = PBXBuildFile; fileRef = DDA6DDC61C6698ED00752541 /* Utilities */; };
+		DDA6DDCB1C66E63300752541 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA6DDCA1C66E63300752541 /* CameraViewController.swift */; };
+		DDA6DDCD1C66F8EB00752541 /* TransactionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA6DDCC1C66F8EB00752541 /* TransactionsViewController.swift */; };
+		DDA6DDCF1C66FC8700752541 /* TransactionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA6DDCE1C66FC8700752541 /* TransactionsTableViewCell.swift */; };
+		DDA6DDD11C67099500752541 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA6DDD01C67099500752541 /* Transaction.swift */; };
+		DDA6DDD31C6709A900752541 /* Transactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA6DDD21C6709A900752541 /* Transactions.swift */; };
+		DDA6DDD61C6709FD00752541 /* Transactions in Resources */ = {isa = PBXBuildFile; fileRef = DDA6DDD51C6709FD00752541 /* Transactions */; };
 		DDB53DAC1C656A7C00832669 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB53DAB1C656A7C00832669 /* AppDelegate.swift */; };
 		DDB53DB11C656A7C00832669 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDB53DAF1C656A7C00832669 /* Main.storyboard */; };
 		DDB53DB31C656A7C00832669 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDB53DB21C656A7C00832669 /* Assets.xcassets */; };
@@ -72,10 +78,16 @@
 		DDA6DDBA1C6685C600752541 /* Grocery */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Grocery; sourceTree = "<group>"; };
 		DDA6DDBC1C668AC600752541 /* StoreSavings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreSavings.swift; sourceTree = "<group>"; };
 		DDA6DDBE1C6698C400752541 /* Houseware */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Houseware; sourceTree = "<group>"; };
-		DDA6DDC01C6698D500752541 /* Pharmaceutical */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Pharmaceutical; sourceTree = "<group>"; };
+		DDA6DDC01C6698D500752541 /* PersonalCare */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PersonalCare; sourceTree = "<group>"; };
 		DDA6DDC21C6698DD00752541 /* Fuel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Fuel; sourceTree = "<group>"; };
 		DDA6DDC41C6698E600752541 /* Bills */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Bills; sourceTree = "<group>"; };
 		DDA6DDC61C6698ED00752541 /* Utilities */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Utilities; sourceTree = "<group>"; };
+		DDA6DDCA1C66E63300752541 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		DDA6DDCC1C66F8EB00752541 /* TransactionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionsViewController.swift; sourceTree = "<group>"; };
+		DDA6DDCE1C66FC8700752541 /* TransactionsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionsTableViewCell.swift; sourceTree = "<group>"; };
+		DDA6DDD01C67099500752541 /* Transaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		DDA6DDD21C6709A900752541 /* Transactions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transactions.swift; sourceTree = "<group>"; };
+		DDA6DDD51C6709FD00752541 /* Transactions */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Transactions; sourceTree = "<group>"; };
 		DDB53DA81C656A7C00832669 /* Cache.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cache.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDB53DAB1C656A7C00832669 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDB53DB01C656A7C00832669 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -155,12 +167,44 @@
 				DDA6DDB51C6684D900752541 /* StoreItem.swift */,
 				DDA6DDBA1C6685C600752541 /* Grocery */,
 				DDA6DDBE1C6698C400752541 /* Houseware */,
-				DDA6DDC01C6698D500752541 /* Pharmaceutical */,
+				DDA6DDC01C6698D500752541 /* PersonalCare */,
 				DDA6DDC21C6698DD00752541 /* Fuel */,
 				DDA6DDC41C6698E600752541 /* Bills */,
 				DDA6DDC61C6698ED00752541 /* Utilities */,
 			);
 			name = Store;
+			sourceTree = "<group>";
+		};
+		DDA6DDC81C66E60500752541 /* Initial */ = {
+			isa = PBXGroup;
+			children = (
+				DD88C5B81C65BD35009CC4D1 /* NavigationViewController.swift */,
+				DD88C5B01C65B580009CC4D1 /* InitialViewController.swift */,
+				DD88C5BA1C65C067009CC4D1 /* LoginViewController.swift */,
+			);
+			name = Initial;
+			sourceTree = "<group>";
+		};
+		DDA6DDC91C66E61200752541 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				DD88C5C21C663CC1009CC4D1 /* MainViewController.swift */,
+				DDCF0E671C66587300AE9452 /* BaseTableViewCell.swift */,
+				DDCF0E611C66466700AE9452 /* StoreTableViewCell.swift */,
+				DDCF0E631C66584A00AE9452 /* StoreItemTableViewCell.swift */,
+				DDCF0E651C66586100AE9452 /* StoreMoreTableViewCell.swift */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		DDA6DDD41C6709AF00752541 /* Transactions Model */ = {
+			isa = PBXGroup;
+			children = (
+				DDA6DDD21C6709A900752541 /* Transactions.swift */,
+				DDA6DDD01C67099500752541 /* Transaction.swift */,
+				DDA6DDD51C6709FD00752541 /* Transactions */,
+			);
+			name = "Transactions Model";
 			sourceTree = "<group>";
 		};
 		DDB53D9F1C656A7C00832669 = {
@@ -189,14 +233,12 @@
 			isa = PBXGroup;
 			children = (
 				DDB53DAB1C656A7C00832669 /* AppDelegate.swift */,
-				DD88C5B81C65BD35009CC4D1 /* NavigationViewController.swift */,
-				DD88C5B01C65B580009CC4D1 /* InitialViewController.swift */,
-				DD88C5BA1C65C067009CC4D1 /* LoginViewController.swift */,
-				DD88C5C21C663CC1009CC4D1 /* MainViewController.swift */,
-				DDCF0E671C66587300AE9452 /* BaseTableViewCell.swift */,
-				DDCF0E611C66466700AE9452 /* StoreTableViewCell.swift */,
-				DDCF0E631C66584A00AE9452 /* StoreItemTableViewCell.swift */,
-				DDCF0E651C66586100AE9452 /* StoreMoreTableViewCell.swift */,
+				DDA6DDC81C66E60500752541 /* Initial */,
+				DDA6DDC91C66E61200752541 /* Main */,
+				DDA6DDCA1C66E63300752541 /* CameraViewController.swift */,
+				DDA6DDCC1C66F8EB00752541 /* TransactionsViewController.swift */,
+				DDA6DDCE1C66FC8700752541 /* TransactionsTableViewCell.swift */,
+				DDA6DDD41C6709AF00752541 /* Transactions Model */,
 				DD88C5C01C65DAE4009CC4D1 /* Util.swift */,
 				DDA6DDB91C6684EE00752541 /* Store */,
 				DD88C5BF1C65C4A5009CC4D1 /* UIImageEffects */,
@@ -343,7 +385,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DDA6DDBB1C6685C600752541 /* Grocery in Resources */,
-				DDA6DDC11C6698D500752541 /* Pharmaceutical in Resources */,
+				DDA6DDC11C6698D500752541 /* PersonalCare in Resources */,
 				DD88C5B51C65BC50009CC4D1 /* ClanOT in Resources */,
 				DDA6DDBF1C6698C400752541 /* Houseware in Resources */,
 				DDB53DB61C656A7C00832669 /* LaunchScreen.storyboard in Resources */,
@@ -351,6 +393,7 @@
 				DDA6DDC71C6698ED00752541 /* Utilities in Resources */,
 				DDA6DDC31C6698DD00752541 /* Fuel in Resources */,
 				DDA6DDC51C6698E600752541 /* Bills in Resources */,
+				DDA6DDD61C6709FD00752541 /* Transactions in Resources */,
 				DDB53DB11C656A7C00832669 /* Main.storyboard in Resources */,
 				DD88C5B31C65B948009CC4D1 /* Lato2OFL in Resources */,
 			);
@@ -431,11 +474,16 @@
 				DD88C5BB1C65C067009CC4D1 /* LoginViewController.swift in Sources */,
 				DD88C5C11C65DAE4009CC4D1 /* Util.swift in Sources */,
 				DDCF0E681C66587300AE9452 /* BaseTableViewCell.swift in Sources */,
+				DDA6DDCD1C66F8EB00752541 /* TransactionsViewController.swift in Sources */,
 				DDA6DDB61C6684D900752541 /* StoreItem.swift in Sources */,
+				DDA6DDD11C67099500752541 /* Transaction.swift in Sources */,
 				DDA6DDB81C6684E400752541 /* Store.swift in Sources */,
 				DDCF0E621C66466700AE9452 /* StoreTableViewCell.swift in Sources */,
+				DDA6DDCF1C66FC8700752541 /* TransactionsTableViewCell.swift in Sources */,
 				DDA6DDBD1C668AC600752541 /* StoreSavings.swift in Sources */,
 				DD88C5B91C65BD35009CC4D1 /* NavigationViewController.swift in Sources */,
+				DDA6DDCB1C66E63300752541 /* CameraViewController.swift in Sources */,
+				DDA6DDD31C6709A900752541 /* Transactions.swift in Sources */,
 				DDB53DAC1C656A7C00832669 /* AppDelegate.swift in Sources */,
 				DD88C5BE1C65C4A0009CC4D1 /* UIImageEffects.m in Sources */,
 				DD88C5B11C65B580009CC4D1 /* InitialViewController.swift in Sources */,

@@ -10,7 +10,7 @@ import UIKit
 import PNChart
 
 enum Categories: String {
-    case Grocery, Houseware, Pharmaceutical, Fuel, Bills, Utilities
+    case Grocery, Houseware, PersonalCare, Fuel, Bills, Utilities
 }
 
 class MainViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
@@ -47,7 +47,6 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 100
-        
         
         buttonGroceries.alpha = 1
         buttonHouseWare.alpha = 0.3
@@ -97,7 +96,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
             selectedCategory = .Houseware
             buttonHouseWare.alpha = 1
         case buttonPharmaceutical:
-            selectedCategory = .Pharmaceutical
+            selectedCategory = .PersonalCare
             buttonPharmaceutical.alpha = 1
         case buttonFuel:
             selectedCategory = .Fuel
