@@ -37,6 +37,7 @@
 		DDB53DC11C656A7C00832669 /* CacheTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB53DC01C656A7C00832669 /* CacheTests.swift */; };
 		DDB53DCC1C656A7C00832669 /* CacheUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB53DCB1C656A7C00832669 /* CacheUITests.swift */; };
 		DDBC919C1C672AD60098F782 /* MoreItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBC919B1C672AD60098F782 /* MoreItemsViewController.swift */; };
+		DDBC919E1C6750AB0098F782 /* CacheItActionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDBC919D1C6750AB0098F782 /* CacheItActionsViewController.swift */; };
 		DDCF0E621C66466700AE9452 /* StoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCF0E611C66466700AE9452 /* StoreTableViewCell.swift */; };
 		DDCF0E641C66584A00AE9452 /* StoreItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCF0E631C66584A00AE9452 /* StoreItemTableViewCell.swift */; };
 		DDCF0E661C66586100AE9452 /* StoreMoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCF0E651C66586100AE9452 /* StoreMoreTableViewCell.swift */; };
@@ -101,6 +102,7 @@
 		DDB53DCD1C656A7C00832669 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DDB53DD91C657C5C00832669 /* Cache-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Cache-Bridging-Header.h"; sourceTree = "<group>"; };
 		DDBC919B1C672AD60098F782 /* MoreItemsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreItemsViewController.swift; sourceTree = "<group>"; };
+		DDBC919D1C6750AB0098F782 /* CacheItActionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheItActionsViewController.swift; sourceTree = "<group>"; };
 		DDCF0E611C66466700AE9452 /* StoreTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreTableViewCell.swift; sourceTree = "<group>"; };
 		DDCF0E631C66584A00AE9452 /* StoreItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreItemTableViewCell.swift; sourceTree = "<group>"; };
 		DDCF0E651C66586100AE9452 /* StoreMoreTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreMoreTableViewCell.swift; sourceTree = "<group>"; };
@@ -188,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				DD88C5C21C663CC1009CC4D1 /* MainViewController.swift */,
+				DDBC919D1C6750AB0098F782 /* CacheItActionsViewController.swift */,
 				DDCF0E671C66587300AE9452 /* BaseTableViewCell.swift */,
 				DDCF0E611C66466700AE9452 /* StoreTableViewCell.swift */,
 				DDCF0E631C66584A00AE9452 /* StoreItemTableViewCell.swift */,
@@ -482,6 +485,7 @@
 				DDA6DDCF1C66FC8700752541 /* TransactionsTableViewCell.swift in Sources */,
 				DDA6DDBD1C668AC600752541 /* StoreSavings.swift in Sources */,
 				DD88C5B91C65BD35009CC4D1 /* NavigationViewController.swift in Sources */,
+				DDBC919E1C6750AB0098F782 /* CacheItActionsViewController.swift in Sources */,
 				DDA6DDCB1C66E63300752541 /* CameraViewController.swift in Sources */,
 				DDA6DDD31C6709A900752541 /* Transactions.swift in Sources */,
 				DDB53DAC1C656A7C00832669 /* AppDelegate.swift in Sources */,

@@ -25,6 +25,9 @@
             <string>ClanOT-Bold</string>
             <string>ClanOT-Bold</string>
             <string>ClanOT-Bold</string>
+            <string>ClanOT-Bold</string>
+            <string>ClanOT-Bold</string>
+            <string>ClanOT-Bold</string>
         </mutableArray>
         <mutableArray key="ClanOT-Book.otf">
             <string>ClanOT-Book</string>
@@ -165,13 +168,13 @@
                                                             <constraint firstAttribute="width" constant="35" id="sfq-fQ-SXY"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="453" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hnn-C8-5eV">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="453" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hnn-C8-5eV">
                                                         <rect key="frame" x="45" y="14" width="34" height="22"/>
                                                         <fontDescription key="fontDescription" name="ClanOT-Book" family="ClanOT" pointSize="17"/>
                                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="ScotiaCard Number" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="nrR-3C-5wG">
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="ScotiaCard Number" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="nrR-3C-5wG">
                                                         <rect key="frame" x="89" y="15" width="441" height="21"/>
                                                         <fontDescription key="fontDescription" name="ClanOT-Book" family="ClanOT" pointSize="16"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="next"/>
@@ -192,7 +195,7 @@
                                                             <constraint firstAttribute="height" constant="35" id="lgp-Ee-0gR"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="PIN" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="MT3-NK-N8N">
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="PIN" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="MT3-NK-N8N">
                                                         <rect key="frame" x="45" y="15" width="485" height="21"/>
                                                         <fontDescription key="fontDescription" name="ClanOT-Book" family="ClanOT" pointSize="16"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done" secureTextEntry="YES"/>
@@ -339,11 +342,23 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aYy-L1-vZX">
+                                                <rect key="frame" x="263" y="6" width="80" height="80"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="RQa-ei-QBG"/>
+                                                    <constraint firstAttribute="width" constant="80" id="zZ6-Vt-I3A"/>
+                                                </constraints>
+                                                <state key="normal" image="Cach It"/>
+                                                <connections>
+                                                    <action selector="cacheItButtonPressed:" destination="CGY-Za-Eru" eventType="touchUpInside" id="ISI-tS-iMu"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstItem="wrC-Ry-5xV" firstAttribute="trailing" secondItem="RJJ-Il-7cB" secondAttribute="trailing" constant="-15" id="5ih-MM-sD0"/>
                                             <constraint firstItem="H4i-8H-Aog" firstAttribute="centerX" secondItem="b1O-ky-P8g" secondAttribute="centerX" id="Cjr-An-S2O"/>
+                                            <constraint firstItem="aYy-L1-vZX" firstAttribute="centerY" secondItem="b1O-ky-P8g" secondAttribute="centerY" constant="-14" id="KaK-Uk-kcY"/>
                                             <constraint firstAttribute="height" constant="120" id="Lkr-1g-34y"/>
                                             <constraint firstItem="H4i-8H-Aog" firstAttribute="bottom" secondItem="b1O-ky-P8g" secondAttribute="bottom" constant="-10" id="Mct-HG-U8X"/>
                                             <constraint firstItem="RJJ-Il-7cB" firstAttribute="leading" secondItem="b1O-ky-P8g" secondAttribute="leading" id="RVK-bI-JIL"/>
@@ -351,6 +366,7 @@
                                             <constraint firstItem="pWb-2F-BWY" firstAttribute="centerX" secondItem="b1O-ky-P8g" secondAttribute="centerX" constant="2" id="iwR-6k-Ly8"/>
                                             <constraint firstItem="wrC-Ry-5xV" firstAttribute="top" secondItem="RJJ-Il-7cB" secondAttribute="top" constant="15" id="mPU-D1-zWO"/>
                                             <constraint firstItem="RJJ-Il-7cB" firstAttribute="bottom" secondItem="b1O-ky-P8g" secondAttribute="bottom" id="oEw-oP-0v7"/>
+                                            <constraint firstItem="aYy-L1-vZX" firstAttribute="centerX" secondItem="b1O-ky-P8g" secondAttribute="centerX" constant="3" id="yyb-EM-vTU"/>
                                             <constraint firstItem="RJJ-Il-7cB" firstAttribute="top" secondItem="b1O-ky-P8g" secondAttribute="top" id="zkN-Js-kcK"/>
                                             <constraint firstItem="RJJ-Il-7cB" firstAttribute="trailing" secondItem="b1O-ky-P8g" secondAttribute="trailing" id="zwF-bm-3H5"/>
                                         </constraints>
@@ -361,10 +377,10 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Vy-tH-WlJ">
                                                 <rect key="frame" x="0.0" y="0.0" width="515" height="50"/>
                                                 <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="upu-4T-g4d">
+                                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="upu-4T-g4d">
                                                         <rect key="frame" x="8" y="0.0" width="499" height="50"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vvq-Sr-9Ly">
+                                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vvq-Sr-9Ly">
                                                                 <rect key="frame" x="0.0" y="0.0" width="84" height="50"/>
                                                                 <fontDescription key="fontDescription" name="ClanOT-Black" family="ClanOT" pointSize="15"/>
                                                                 <state key="normal" title="GROCERIES">
@@ -374,7 +390,7 @@
                                                                     <action selector="categoryButtonPressed:" destination="CGY-Za-Eru" eventType="touchUpInside" id="On2-wg-dFJ"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4g3-Sa-Ta5">
+                                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4g3-Sa-Ta5">
                                                                 <rect key="frame" x="99" y="0.0" width="125" height="50"/>
                                                                 <fontDescription key="fontDescription" name="ClanOT-Black" family="ClanOT" pointSize="15"/>
                                                                 <state key="normal" title="PERSONAL CARE">
@@ -384,7 +400,7 @@
                                                                     <action selector="categoryButtonPressed:" destination="CGY-Za-Eru" eventType="touchUpInside" id="cWs-rs-Byl"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L33-0P-D9r">
+                                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L33-0P-D9r">
                                                                 <rect key="frame" x="239" y="0.0" width="38" height="50"/>
                                                                 <fontDescription key="fontDescription" name="ClanOT-Black" family="ClanOT" pointSize="15"/>
                                                                 <state key="normal" title="FUEL">
@@ -394,7 +410,7 @@
                                                                     <action selector="categoryButtonPressed:" destination="CGY-Za-Eru" eventType="touchUpInside" id="UNF-ms-Vb8"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m6M-XJ-XE9">
+                                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m6M-XJ-XE9">
                                                                 <rect key="frame" x="292" y="0.0" width="71" height="50"/>
                                                                 <fontDescription key="fontDescription" name="ClanOT-Black" family="ClanOT" pointSize="15"/>
                                                                 <state key="normal" title="UTILITIES">
@@ -404,7 +420,7 @@
                                                                     <action selector="categoryButtonPressed:" destination="CGY-Za-Eru" eventType="touchUpInside" id="hnt-gC-rGf"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2BP-AL-Ixg">
+                                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2BP-AL-Ixg">
                                                                 <rect key="frame" x="378" y="0.0" width="121" height="50"/>
                                                                 <fontDescription key="fontDescription" name="ClanOT-Black" family="ClanOT" pointSize="15"/>
                                                                 <state key="normal" title="HOME SUPPLIES">
@@ -420,7 +436,6 @@
                                                         </constraints>
                                                     </stackView>
                                                 </subviews>
-                                                <color key="backgroundColor" red="0.8666666666666667" green="0.84705882352941175" blue="0.84705882352941175" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstItem="upu-4T-g4d" firstAttribute="leading" secondItem="4Vy-tH-WlJ" secondAttribute="leadingMargin" id="5dQ-Cg-sCD"/>
                                                     <constraint firstAttribute="trailingMargin" secondItem="upu-4T-g4d" secondAttribute="trailing" id="ljT-pw-3pR"/>
@@ -455,23 +470,23 @@
                                                                 <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dEv-bT-941">
                                                                     <rect key="frame" x="0.0" y="0.0" width="584" height="75"/>
                                                                     <subviews>
-                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="family1" translatesAutoresizingMaskIntoConstraints="NO" id="E9s-J6-Sl0">
-                                                                            <rect key="frame" x="20" y="9" width="55" height="55"/>
+                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="family1" translatesAutoresizingMaskIntoConstraints="NO" id="E9s-J6-Sl0">
+                                                                            <rect key="frame" x="20" y="10" width="55" height="55"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="width" constant="55" id="4r8-Ov-pwL"/>
                                                                                 <constraint firstAttribute="height" constant="55" id="Xdj-jS-866"/>
                                                                             </constraints>
                                                                         </imageView>
-                                                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Tbc-by-mH0">
+                                                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Tbc-by-mH0">
                                                                             <rect key="frame" x="95" y="20" width="85" height="34"/>
                                                                             <subviews>
-                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Metro Inc." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z1y-vE-C6A">
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Metro Inc." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z1y-vE-C6A">
                                                                                     <rect key="frame" x="0.0" y="0.0" width="85" height="22"/>
                                                                                     <fontDescription key="fontDescription" name="ClanOT-Bold" family="ClanOT" pointSize="17"/>
                                                                                     <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                                     <nil key="highlightedColor"/>
                                                                                 </label>
-                                                                                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="uB4-fe-saR">
+                                                                                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="uB4-fe-saR">
                                                                                     <rect key="frame" x="0.0" y="22" width="54" height="12"/>
                                                                                     <subviews>
                                                                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Location" translatesAutoresizingMaskIntoConstraints="NO" id="Wr7-JA-sqN">
@@ -481,7 +496,7 @@
                                                                                                 <constraint firstAttribute="width" constant="12" id="UbA-NJ-0WN"/>
                                                                                             </constraints>
                                                                                         </imageView>
-                                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="2.3 km" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="65L-jl-td8">
+                                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="2.3 km" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="65L-jl-td8">
                                                                                             <rect key="frame" x="17" y="0.0" width="37" height="12"/>
                                                                                             <fontDescription key="fontDescription" name="ClanOT-Thin" family="ClanOT" pointSize="11"/>
                                                                                             <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -491,16 +506,16 @@
                                                                                 </stackView>
                                                                             </subviews>
                                                                         </stackView>
-                                                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="rTH-s2-yg5">
+                                                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="rTH-s2-yg5">
                                                                             <rect key="frame" x="472" y="19" width="92" height="36"/>
                                                                             <subviews>
-                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="$2 - $6" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qdo-sX-MLS">
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="$2 - $6" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qdo-sX-MLS">
                                                                                     <rect key="frame" x="0.0" y="0.0" width="92" height="22"/>
                                                                                     <fontDescription key="fontDescription" name="ClanOT-Black" family="ClanOT" pointSize="17"/>
                                                                                     <color key="textColor" red="0.31764705879999999" green="0.70588235290000001" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
                                                                                     <nil key="highlightedColor"/>
                                                                                 </label>
-                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Potential savings" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GKZ-5P-6nP">
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Potential savings" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GKZ-5P-6nP">
                                                                                     <rect key="frame" x="0.0" y="22" width="92" height="14"/>
                                                                                     <fontDescription key="fontDescription" name="ClanOT-Thin" family="ClanOT" pointSize="11"/>
                                                                                     <color key="textColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -658,17 +673,30 @@
                                     </tableView>
                                 </subviews>
                             </stackView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LUe-GZ-IhR">
+                                <rect key="frame" x="0.0" y="401" width="600" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="Pbv-Yh-FJX"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="6mz-zn-hL6" kind="embed" id="g63-ni-Ppw"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="LUe-GZ-IhR" firstAttribute="leading" secondItem="gC7-FQ-Pa9" secondAttribute="leading" id="68l-PV-hMa"/>
                             <constraint firstItem="B0Z-pC-yp3" firstAttribute="trailing" secondItem="gC7-FQ-Pa9" secondAttribute="trailing" id="LeD-Z2-Ys4"/>
                             <constraint firstItem="B0Z-pC-yp3" firstAttribute="top" secondItem="HXX-rm-S8R" secondAttribute="bottom" constant="-20" id="N8T-j0-iaM"/>
+                            <constraint firstItem="LUe-GZ-IhR" firstAttribute="bottom" secondItem="Xvz-90-JeW" secondAttribute="top" id="UVq-1m-WKv"/>
                             <constraint firstItem="B0Z-pC-yp3" firstAttribute="leading" secondItem="gC7-FQ-Pa9" secondAttribute="leading" id="dqi-mV-cnr"/>
+                            <constraint firstItem="LUe-GZ-IhR" firstAttribute="trailing" secondItem="gC7-FQ-Pa9" secondAttribute="trailing" id="gMa-yh-a4s"/>
                             <constraint firstItem="B0Z-pC-yp3" firstAttribute="bottom" secondItem="Xvz-90-JeW" secondAttribute="top" id="wFU-l4-tcV"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" image="Savings" id="X1o-lZ-jRW"/>
                     <connections>
+                        <outlet property="buttonCacheIt" destination="aYy-L1-vZX" id="YGE-Ag-NzB"/>
                         <outlet property="buttonFuel" destination="L33-0P-D9r" id="Jik-Fy-OwB"/>
                         <outlet property="buttonGroceries" destination="Vvq-Sr-9Ly" id="YUF-iG-kOl"/>
                         <outlet property="buttonHouseWare" destination="2BP-AL-Ixg" id="4E3-VB-JD9"/>
@@ -926,19 +954,19 @@
                                                                 <constraint firstItem="Rms-ee-R6t" firstAttribute="trailing" secondItem="9ji-Ue-E1U" secondAttribute="trailing" id="uEe-7s-ECR"/>
                                                             </constraints>
                                                         </view>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="wfN-vu-DaF">
+                                                        <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="wfN-vu-DaF">
                                                             <rect key="frame" x="98" y="23" width="484" height="69"/>
                                                             <subviews>
-                                                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5bB-9H-en2">
+                                                                <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5bB-9H-en2">
                                                                     <rect key="frame" x="0.0" y="0.0" width="484" height="22"/>
                                                                     <subviews>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" text="Shoppers Drug Mart" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2xN-lk-Wbd">
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" misplaced="YES" text="Shoppers Drug Mart" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2xN-lk-Wbd">
                                                                             <rect key="frame" x="0.0" y="0.0" width="392" height="22"/>
                                                                             <fontDescription key="fontDescription" name="ClanOT-Medium" family="ClanOT" pointSize="17"/>
                                                                             <color key="textColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Jan 24, 2016" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Opn-Oa-IM3">
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" misplaced="YES" text="Jan 24, 2016" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Opn-Oa-IM3">
                                                                             <rect key="frame" x="392" y="0.0" width="92" height="22"/>
                                                                             <fontDescription key="fontDescription" name="ClanOT-Book" family="ClanOT" pointSize="14"/>
                                                                             <color key="textColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -946,17 +974,17 @@
                                                                         </label>
                                                                     </subviews>
                                                                 </stackView>
-                                                                <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pzj-Jf-RzY">
+                                                                <view alpha="0.29999999999999999" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pzj-Jf-RzY">
                                                                     <rect key="frame" x="0.0" y="22" width="484" height="1"/>
                                                                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="1" id="u0E-GS-jcR"/>
                                                                     </constraints>
                                                                 </view>
-                                                                <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="6uw-y7-TjD">
+                                                                <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="6uw-y7-TjD">
                                                                     <rect key="frame" x="0.0" y="23" width="484" height="26"/>
                                                                     <subviews>
-                                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="wG5-zq-8qQ">
+                                                                        <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="wG5-zq-8qQ">
                                                                             <rect key="frame" x="0.0" y="0.0" width="428" height="20"/>
                                                                             <subviews>
                                                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Location" translatesAutoresizingMaskIntoConstraints="NO" id="epA-wY-VcE">
@@ -966,7 +994,7 @@
                                                                                         <constraint firstAttribute="height" constant="20" id="zAs-nI-6fQ"/>
                                                                                     </constraints>
                                                                                 </imageView>
-                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Shopper Drug Mart" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qRd-fG-Agw">
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" misplaced="YES" text="Shopper Drug Mart" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qRd-fG-Agw">
                                                                                     <rect key="frame" x="25" y="0.0" width="403" height="20"/>
                                                                                     <fontDescription key="fontDescription" name="ClanOT-Book" family="ClanOT" pointSize="14"/>
                                                                                     <color key="textColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -974,7 +1002,7 @@
                                                                                 </label>
                                                                             </subviews>
                                                                         </stackView>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$4.52" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CLA-25-T0f">
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="$4.52" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CLA-25-T0f">
                                                                             <rect key="frame" x="428" y="0.0" width="56" height="26"/>
                                                                             <fontDescription key="fontDescription" name="ClanOT-Black" family="ClanOT" pointSize="20"/>
                                                                             <color key="textColor" red="0.31764705879999999" green="0.70588235290000001" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
@@ -982,10 +1010,10 @@
                                                                         </label>
                                                                     </subviews>
                                                                 </stackView>
-                                                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p2Y-wh-skb">
+                                                                <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p2Y-wh-skb">
                                                                     <rect key="frame" x="0.0" y="49" width="484" height="20"/>
                                                                     <subviews>
-                                                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="agm-76-23M">
+                                                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="agm-76-23M">
                                                                             <rect key="frame" x="0.0" y="0.0" width="406" height="20"/>
                                                                             <subviews>
                                                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Credit Card" translatesAutoresizingMaskIntoConstraints="NO" id="DBx-zd-kYH">
@@ -995,13 +1023,13 @@
                                                                                         <constraint firstAttribute="width" constant="20" id="y0x-DS-Yml"/>
                                                                                     </constraints>
                                                                                 </imageView>
-                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Total Spent:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fIh-6h-UB2">
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" misplaced="YES" text="Total Spent:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fIh-6h-UB2">
                                                                                     <rect key="frame" x="25" y="0.0" width="92" height="20"/>
                                                                                     <fontDescription key="fontDescription" name="ClanOT-Book" family="ClanOT" pointSize="16"/>
                                                                                     <color key="textColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                                     <nil key="highlightedColor"/>
                                                                                 </label>
-                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="$49.79" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nZN-iY-Y6q">
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="$49.79" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nZN-iY-Y6q">
                                                                                     <rect key="frame" x="122" y="0.0" width="284" height="20"/>
                                                                                     <fontDescription key="fontDescription" name="ClanOT-Medium" family="ClanOT" pointSize="16"/>
                                                                                     <color key="textColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1009,7 +1037,7 @@
                                                                                 </label>
                                                                             </subviews>
                                                                         </stackView>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Total saved" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Feq-6z-UK1">
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Total saved" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Feq-6z-UK1">
                                                                             <rect key="frame" x="406" y="0.0" width="78" height="20"/>
                                                                             <fontDescription key="fontDescription" name="ClanOT-Book" family="ClanOT" pointSize="14"/>
                                                                             <color key="textColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1127,11 +1155,73 @@
             </objects>
             <point key="canvasLocation" x="2767" y="406"/>
         </scene>
+        <!--Cache It Actions View Controller-->
+        <scene sceneID="Z6H-KH-XmC">
+            <objects>
+                <viewController id="6mz-zn-hL6" customClass="CacheItActionsViewController" customModule="Cache" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bHx-tE-xsW"/>
+                        <viewControllerLayoutGuide type="bottom" id="JzP-Ri-ndM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1KD-J1-5Qt">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="150"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OfK-0W-kBU">
+                                <rect key="frame" x="100" y="50" width="400" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="400" id="7jv-Q9-ldY"/>
+                                    <constraint firstAttribute="height" constant="50" id="ZV5-gf-Hzb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ClanOT-Bold" family="ClanOT" pointSize="13"/>
+                                <state key="normal" title="STUDENT LINE OF CREDIT">
+                                    <color key="titleColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vDF-Yk-9nz">
+                                <rect key="frame" x="100" y="100" width="400" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="S69-CT-C33"/>
+                                    <constraint firstAttribute="width" constant="400" id="iBi-Lk-5Q1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ClanOT-Bold" family="ClanOT" pointSize="13"/>
+                                <state key="normal" title="SCOTIABANK MOMENTUM SAVINGS ACCOUNT">
+                                    <color key="titleColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UjE-Ru-P0m">
+                                <rect key="frame" x="100" y="0.0" width="400" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="3em-VO-WFQ"/>
+                                    <constraint firstAttribute="width" constant="400" id="KDA-or-B96"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ClanOT-Bold" family="ClanOT" pointSize="13"/>
+                                <state key="normal" title="SCOTIA GM VISA CARD">
+                                    <color key="titleColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="OfK-0W-kBU" firstAttribute="centerX" secondItem="1KD-J1-5Qt" secondAttribute="centerX" id="Egt-ax-RiL"/>
+                            <constraint firstItem="vDF-Yk-9nz" firstAttribute="centerX" secondItem="1KD-J1-5Qt" secondAttribute="centerX" id="J8G-TC-2NP"/>
+                            <constraint firstItem="UjE-Ru-P0m" firstAttribute="centerX" secondItem="1KD-J1-5Qt" secondAttribute="centerX" id="Mz5-nC-sAx"/>
+                            <constraint firstItem="UjE-Ru-P0m" firstAttribute="top" secondItem="1KD-J1-5Qt" secondAttribute="topMargin" id="eHC-d2-bX4"/>
+                            <constraint firstItem="OfK-0W-kBU" firstAttribute="top" secondItem="UjE-Ru-P0m" secondAttribute="bottom" id="olr-mE-cCR"/>
+                            <constraint firstItem="vDF-Yk-9nz" firstAttribute="top" secondItem="OfK-0W-kBU" secondAttribute="bottom" id="qbJ-fl-OaU"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3H1-Av-oDk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3558" y="-137"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Accounts" width="26" height="26"/>
         <image name="Awards" width="108" height="57"/>
         <image name="Back Arrow" width="72" height="72"/>
+        <image name="Cach It" width="72" height="72"/>
         <image name="Camera" width="31" height="31"/>
         <image name="Credit Card" width="72" height="72"/>
         <image name="Location" width="46" height="56"/>

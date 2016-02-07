@@ -1,1 +1,91 @@
-[{"storeName":"Pharma","totalPotentialSaving":"$4-$7","kmAway":"2.3km", "items":[{"pictureName":"picture1","title":"Macintosh Apple","saving":"$0.27"},{"pictureName":"picture2","title":"Bananas","saving":"$0.65"},{"pictureName":"picture3","title":"Mezzetta Marinara","saving":"$1.50"},{"pictureName":"picture4","title":"Red Bell Pepper","saving":"$0.80"},{"pictureName":"picture5","title":"Minute Maid Orange Juice","saving":"$1.20"},{"pictureName":"picture6","title":"picture","saving":""},{"pictureName":"picture7","title":"picture","saving":""}]}]
+[{
+"storeName": "Rexall Drugstore",
+"storePicture": "rexall",
+"totalPotentialSaving": "$16 - $20",
+"kmAway": "3.3km",
+"items": [{
+"pictureName": "oldspice",
+"title": "Old Spice Magnate",
+"saving": "$3.80"
+}, {
+"pictureName": "pampers",
+"title": "Pampers Active Baby",
+"saving": "$3.50"
+}, {
+"pictureName": "huggies",
+"title": "Huggies Baby Wipes",
+"saving": "$4.40"
+}, {
+"pictureName": "razors",
+"title": "Gilette ProGlide refill",
+"saving": "$2.20"
+}, {
+"pictureName": "toothbrush",
+"title": "Oral B Toothbrush",
+"saving": "$1.80"
+}, {
+"pictureName": "vitaminC",
+"title": "Jamieson Vitamin C ",
+"saving": "$1.90"
+}]
+}, {
+"storeName": "Walmart",
+"storePicture": "walmart",
+"totalPotentialSaving": "$14 - $18",
+"kmAway": "4.3km",
+"items": [{
+"pictureName": "pampers",
+"title": "Pampers Active Baby",
+"saving": "$5.50"
+}, {
+"pictureName": "huggies",
+"title": "Huggies Baby Wipes",
+"saving": "$1.90"
+}, {
+"pictureName": "razors",
+"title": "Gilette ProGlide refill",
+"saving": "$3.20"
+}, {
+"pictureName": "oldspice",
+"title": "Old Spice Magnate",
+"saving": "$1.00"
+}, {
+"pictureName": "toothbrush",
+"title": "Oral B Toothbrush",
+"saving": "$2.80"
+}, {
+"pictureName": "vitaminC",
+"title": "Jamieson Vitamin C ",
+"saving": "$1.90"
+}]
+}, {
+"storeName": "Shoppers Drugmart",
+"storePicture": "shoppers",
+"totalPotentialSaving": "$12 - $16",
+"kmAway": "1.3km",
+"items": [{
+"pictureName": "vitaminC",
+"title": "Jamieson Vitamin C ",
+"saving": "$1.90"
+}, {
+"pictureName": "pampers",
+"title": "Pampers Active Baby",
+"saving": "$2.50"
+}, {
+"pictureName": "huggies",
+"title": "Huggies Baby Wipes",
+"saving": "$1.40"
+}, {
+"pictureName": "razors",
+"title": "Gilette ProGlide refill",
+"saving": "$2.20"
+}, {
+"pictureName": "toothbrush",
+"title": "Oral B Toothbrush",
+"saving": "$2.80"
+}, {
+"pictureName": "oldspice",
+"title": "Old Spice Magnate",
+"saving": "$3.80"
+}]
+}]

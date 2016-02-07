@@ -26,6 +26,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBOutlet var imageViewBlurred: UIImageView!
     @IBOutlet var viewCircleContainerView: UIView!
     @IBOutlet var labelSavingsValue: UILabel!
+    @IBOutlet var buttonCacheIt: UIButton!
 
     var circleChart: PNCircleChart?
     var selectedIndexPath: NSIndexPath?
@@ -126,12 +127,19 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     func newReceiptSelected() {
         print("I got something in here!")
         circleChart?.updateChartByCurrent(100)
+        labelSavingsValue.text = "$50.00"
         
-        for index in 1...15 {
-            labelSavingsValue.text = "$\(35+index).00"
+        let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(1.5 * Double(NSEC_PER_SEC)))
+        dispatch_after(delayTime, dispatch_get_main_queue()) {
+            self.circleChart?.hidden = true
+            self.buttonCacheIt.hidden = false
         }
-        
     }
+
+    @IBAction func cacheItButtonPressed(sender: AnyObject) {
+        print("Cache it pressed")
+    }
+    
     // MARK: - Table View Delegate Methods
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return storeSavings.stores?.count ?? 0
