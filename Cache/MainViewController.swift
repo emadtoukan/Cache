@@ -27,6 +27,8 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBOutlet var viewCircleContainerView: UIView!
     @IBOutlet var labelSavingsValue: UILabel!
     @IBOutlet var buttonCacheIt: UIButton!
+    @IBOutlet var viewGradient: UIView!
+    @IBOutlet var constraintBottom: NSLayoutConstraint!
 
     var circleChart: PNCircleChart?
     var selectedIndexPath: NSIndexPath?
@@ -86,6 +88,10 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
             if let vc = segue.destinationViewController as? MoreItemsViewController, store = sender as? Store {
                 vc.store = store
             }
+        } else if segue.identifier == "showCacheItOptions" {
+            if let vc = segue.destinationViewController as? CacheItActionsViewController {
+                vc.delegate = self
+            }
         }
     }
     
@@ -136,8 +142,26 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         }
     }
 
+    func hideCacheItActions() {
+        print("Hiding the cache it icons")
+        cacheItOptions(false)
+    }
+    
     @IBAction func cacheItButtonPressed(sender: AnyObject) {
         print("Cache it pressed")
+        cacheItOptions(true)
+    }
+    
+    func cacheItOptions(show: Bool) {
+        self.constraintBottom.constant = show ? 0 : 150
+        
+        UIView.animateWithDuration(0.5, animations: { () -> Void in
+            self.view.layoutIfNeeded()
+            }) { (success: Bool) -> Void in
+                UIView.animateWithDuration(0.5, animations: { () -> Void in
+                    self.viewGradient.alpha = show ? 0.3 : 0
+                })
+        }
     }
     
     // MARK: - Table View Delegate Methods
